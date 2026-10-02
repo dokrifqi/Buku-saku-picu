@@ -13,3 +13,9 @@ Hosting
 - GitHub Pages: tidak bisa mengatur header, jadi pembaruan kadang tertunda sampai sekitar 10 menit.
 
 Hanya naikkan angka CACHE di sw.js (saku-picu-v2 menjadi v3) bila Anda mengganti file ikon.
+
+Pintasan pasien PICU
+- Menu atas: tab "Pasien" langsung membuka daftar pasien dan peta bed.
+- Beranda: kartu "Pasien PICU" berisi ringkasan dan 10 bed. Ketuk bed terisi untuk membuka pasien, bed kosong untuk menambah pasien.
+- Android: tekan lama ikon aplikasi di layar utama, pilih "Pasien PICU". Perlu aplikasi dipasang ulang bila pintasan belum muncul.
+- Tautan: alamat-aplikasi/index.html#pasien membuka daftar pasien (bisa dijadikan bookmark).

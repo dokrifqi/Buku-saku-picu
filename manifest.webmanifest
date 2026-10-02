@@ -39,5 +39,20 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Pasien PICU",
+      "short_name": "Pasien",
+      "description": "Buka daftar pasien dan peta bed",
+      "url": "./index.html#pasien",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

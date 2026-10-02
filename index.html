@@ -258,6 +258,68 @@ details.dd[open] summary{margin-bottom:6px}
 .pins{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
 .pin{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;color:var(--m);background:#FFF0F2;border:1.5px solid var(--m);border-radius:20px;padding:5px 11px;cursor:pointer}
 .pin:active{background:var(--m);color:#fff}
+
+.hidden{display:none !important}
+.bcd-row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--cd);font-size:.76rem;gap:10px}
+.bcd-row:last-child{border-bottom:none}
+.bcd-row .k{color:var(--tm);font-weight:600}
+.bcd-row .v{color:var(--tx);font-weight:800;text-align:right}
+.bcd-pcard{background:#fff;border:1px solid var(--cd);border-radius:12px;padding:12px 14px;margin-bottom:8px;box-shadow:var(--sh);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.bcd-pname{font-size:.84rem;font-weight:700;color:var(--tx)}
+.bcd-pmeta{font-size:.68rem;color:var(--tm);margin-top:2px}
+.bcd-pdel{background:#FEF2F2;color:#DC2626;border:none;width:30px;height:30px;border-radius:8px;font-size:.9rem;cursor:pointer;flex-shrink:0}
+.bcd-subtabs{display:flex;gap:6px;margin:12px 0}
+.bcd-st{flex:1;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;padding:8px 6px;border-radius:10px;border:1.5px solid var(--cd);background:#fff;color:var(--tm);cursor:pointer}
+.bcd-st.active{background:var(--m);border-color:var(--m);color:#fff}
+.bcd-sp{display:none}.bcd-sp.active{display:block}
+.bcd-shift-grid{display:flex;flex-direction:column;gap:10px;margin:12px 0}
+.bcd-shift-card{border-radius:14px;padding:12px 14px;box-shadow:var(--sh);border-left:4px solid var(--cd);background:#fff}
+.bcd-shift-card-0{background:#EFF6FF;border-left-color:#3B82F6}
+.bcd-shift-card-1{background:#FAF5FF;border-left-color:#A855F7}
+.bcd-shift-card-2{background:#FFF7ED;border-left-color:#F97316}
+.bcd-shift-title{font-size:.8rem;font-weight:800;color:var(--m);margin-bottom:8px}
+.bcd-shift-row{display:flex;gap:8px}.bcd-shift-row>div{flex:1}
+.bcd-shift-out{display:flex;justify-content:space-between;margin-top:8px;font-size:.68rem;color:var(--tm);gap:8px}
+.bcd-helper-toggle{width:100%;margin-top:10px;background:#fff;border:1.5px solid var(--cd);color:var(--m);font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:700;padding:8px 10px;border-radius:10px;cursor:pointer}
+.bcd-helper-panel{background:#ECFEFF;border-radius:10px;padding:10px 12px;margin-top:10px;border:1px solid #A5F3FC}
+.bcd-preset-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.bcd-preset-row button{flex:1;min-width:100px;padding:7px 6px;border-radius:8px;border:1.5px solid var(--cd);background:#fff;color:var(--m);font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;cursor:pointer}
+.bcd-seg{display:flex;gap:6px;flex-wrap:wrap}
+.bcd-seg button{flex:1;min-width:80px;padding:7px 4px;border-radius:9px;border:1.5px solid var(--cd);background:#fff;color:var(--tm);font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;cursor:pointer}
+.bcd-seg button.active{background:var(--m);border-color:var(--m);color:#fff}
+.bcd-check{display:flex;align-items:center;gap:8px;font-size:.74rem;font-weight:600;color:var(--tm);margin-top:8px;cursor:pointer}
+.bcd-check input{width:18px;height:18px;accent-color:var(--m)}
+.bcd-gh{font-size:.76rem;font-weight:800;color:#fff;background:var(--m);padding:8px 12px;border-radius:9px;margin:14px 0 8px}
+.bcd-warn{background:#FEF2F2;border-left:3px solid #DC2626;border-radius:0 10px 10px 0;padding:9px 12px;font-size:.72rem;color:#991B1B;font-weight:600;margin-top:6px;line-height:1.5}
+.bcd-tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.66rem;font-weight:700}
+.bcd-tag.normal{background:#ECFDF5;color:#065F46}.bcd-tag.caution{background:#FFF7ED;color:#9A3412}.bcd-tag.danger{background:#FEF2F2;color:#991B1B}
+.bcd-hday{background:#fff;border:1px solid var(--cd);border-radius:12px;padding:12px 14px;margin-bottom:8px;cursor:pointer}
+.bcd-hday b{font-size:.8rem}.bcd-hday div{font-size:.68rem;color:var(--tm);margin-top:2px}
+.bcd-empty{text-align:center;padding:26px 12px;color:var(--tm);font-size:.76rem}
+
+.bcd-bedmap{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:8px 0 12px}
+.bcd-bed{border:1.5px dashed var(--cd);border-radius:10px;padding:6px 2px;text-align:center;background:#fff;cursor:pointer;min-height:56px}
+.bcd-bed .bn{font-size:.8rem;font-weight:800;color:var(--tm)}
+.bcd-bed .bp{font-size:.58rem;color:var(--tm);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 3px}
+.bcd-bed.occ{border-style:solid;border-color:var(--m);background:#FFF0F2}
+.bcd-bed.occ .bn{color:var(--m)}
+.bcd-bed .bv{font-size:.72rem}
+.bcd-bedbadge{display:inline-block;background:var(--m);color:#fff;font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:10px;margin-right:5px;vertical-align:middle}
+.bcd-vseg{display:flex;gap:6px;margin:6px 0 8px}
+.bcd-vseg button{flex:1;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;padding:9px 6px;border-radius:10px;border:1.5px solid var(--cd);background:#fff;color:var(--tm);cursor:pointer}
+.bcd-vseg button.active{background:var(--m);color:#fff;border-color:var(--m)}
+.tf-hi{background:#FEE2E2;color:#B91C1C;font-weight:700}
+.tf-lo{background:#DBEAFE;color:#1D4ED8;font-weight:700}
+
+.kc-head{background:#FFF0F2;border:1px solid var(--m);border-radius:10px;padding:8px 12px;font-size:.78rem;margin:10px 0 4px;color:var(--tx)}
+
+.hb-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.hb-bed{border:1.5px dashed var(--cd);border-radius:10px;padding:6px 2px;text-align:center;background:#fff;cursor:pointer;min-height:52px}
+.hb-bed .bn{font-size:.78rem;font-weight:800;color:var(--tm)}
+.hb-bed .bp{font-size:.58rem;color:var(--tm);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 3px}
+.hb-bed.occ{border-style:solid;border-color:var(--m);background:#FFF0F2}
+.hb-bed.occ .bn{color:var(--m)}
+.hb-bed .bv{font-size:.7rem}
 </style>
 </head>
 <body>
@@ -272,8 +334,10 @@ details.dd[open] summary{margin-bottom:6px}
   </div>
   <nav class="nav">
     <button class="nb active" onclick="showSec('beranda',this)">📖 Beranda</button>
+    <button class="nb" id="nbPasien" onclick="openPasien()">🛏️ Pasien</button>
     <button class="nb" onclick="showSec('link',this)">🔗 Link</button>
     <button class="nb" onclick="showSec('jaga',this)">🌙 Jaga PICU</button>
+    <button class="nb" onclick="showSec('bcd',this)">📋 BCD PICU</button>
     <button class="nb" onclick="showSec('ventilator',this)">🫁 Ventilator</button>
     <button class="nb" onclick="showSec('agd',this)">🩸 AGD</button>
     <button class="nb" onclick="showSec('cairan',this)">💧 Cairan</button>
@@ -290,6 +354,11 @@ details.dd[open] summary{margin-bottom:6px}
 
 <!-- ══════ BERANDA ══════ -->
 <div id="beranda" class="sec active">
+  <div class="card" id="pasienCard">
+    <div class="ctitle"><div class="icon">🛏️</div> Pasien PICU</div>
+    <div id="pasienHome"></div>
+    <button type="button" class="btn btn-p btn-full" style="margin-top:10px" onclick="openPasien()">📋 Buka daftar pasien</button>
+  </div>
   <p class="sl">Daftar Isi</p>
   <div class="card">
     <div class="ctitle"><div class="icon">📖</div> Selamat datang di Buku Saku PICU</div>
@@ -298,6 +367,7 @@ details.dd[open] summary{margin-bottom:6px}
   <div class="toc">
       <button class="toc-b" onclick="goSec('link')"><div class="ti">🔗</div><div class="tn">Link Penting</div><div class="td2">23 link</div></button>
       <button class="toc-b" onclick="goSec('jaga')"><div class="ti">🌙</div><div class="tn">Bab 1 — Jaga PICU</div><div class="td2">5 sub bab</div></button>
+      <button class="toc-b" onclick="goSec('bcd')"><div class="ti">📋</div><div class="tn">BCD PICU</div><div class="td2">Materi &amp; pasien</div></button>
       <button class="toc-b" onclick="goSec('ventilator')"><div class="ti">🫁</div><div class="tn">Bab 2 — Ventilator</div><div class="td2">12 sub bab</div></button>
       <button class="toc-b" onclick="goSec('agd')"><div class="ti">🩸</div><div class="tn">Bab 3 — AGD</div><div class="td2">7 sub bab</div></button>
       <button class="toc-b" onclick="goSec('cairan')"><div class="ti">💧</div><div class="tn">Bab 4 — Cairan</div><div class="td2">5 sub bab</div></button>
@@ -381,13 +451,154 @@ details.dd[open] summary{margin-bottom:6px}
       <button class="btn btn-s jg-reset" onclick="resetChecks('hcu')">↺ Reset centang</button>
     </div>
   </div>
-  <div id="jg-orientasi" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">⚡</div> Pintasan Cepat</div><div class="pins"><button class="pin" onclick="goSub('cairan','cr-rumus')">📊 BCD</button><button class="pin" onclick="goSub('ventilator','vt-setting')">🫁 Ventilator</button><button class="pin" onclick="goSub('agd','agd-sum')">🩸 AGD</button><button class="pin" onclick="goSub('obat','ob-ring')">💊 Obat</button><button class="pin" onclick="goSub('obat','ob-kalk')">🧮 Kalkulator obat</button><button class="pin" onclick="goSub('link','')">🔗 Link</button></div></div><div class="card"><div class="ctitle"><div class="icon">🚪</div> Hari Pertama</div><label class="step"><input type="checkbox" data-k="or-1"><span class="st-n">1</span><span class="st-b"><span class="st-x">Buka jas dokter, pakai <strong>baju jaga</strong>. Snelli tetap dibawa.</span></span></label><label class="step"><input type="checkbox" data-k="or-2"><span class="st-n">2</span><span class="st-b"><span class="st-x">Tas disimpan di <strong>penyimpanan kayu</strong> yang dibuka ke atas, lewat pintu pertama setelah belokan.</span></span></label><label class="step"><input type="checkbox" data-k="or-3"><span class="st-n">3</span><span class="st-b"><span class="st-x">Nomor bed mulai <strong>134</strong>, maksimal <strong>10 pasien</strong>.</span></span></label><label class="step"><input type="checkbox" data-k="or-4"><span class="st-n">4</span><span class="st-b"><span class="st-x">Orientasi sifatnya <strong>observasi</strong> dan ikut kegiatan senior.</span></span></label><label class="step"><input type="checkbox" data-k="or-5"><span class="st-n">5</span><span class="st-b"><span class="st-x">Hari <strong>Jumat</strong>: ilmiah mulai pukul <strong>10.30</strong>, dan ada <strong>resep iter</strong> untuk rawat inap Sabtu–Minggu.</span></span></label><label class="step"><input type="checkbox" data-k="or-6"><span class="st-n">6</span><span class="st-b"><span class="st-x">Siapkan <strong>stetoskop, oksimetri, termometer, alcohol swab</strong> saat visite.</span></span></label><button class="btn btn-s jg-reset" onclick="resetChecks('or')">↺ Reset centang</button></div><div class="card"><div class="ctitle"><div class="icon">🕓</div> Alur Harian Junior (ETIA)</div><table class="t"><tr><th>Waktu</th><th>Kegiatan</th></tr><tr><td>04.30–06.00</td><td>Foto <strong>ventilator</strong> dengan grafik terlihat sampai garis kanan, dan foto <strong>GDS</strong> ke grup PICU (nomor bed dan nama pasien).</td></tr><tr><td>06.00–12.00</td><td>Pemeriksaan fisik; hitung <strong>BC kumulatif, BCD, diuresis, MAP</strong> (normal 50 + 2n). Update <strong>GDocs</strong> (advis, DPH, ventilator, SOAP, hari antibiotik, cakupan, lab). Resepkan <strong>TPN sebelum 09.00</strong>. CC 08.00–09.00 online. Operan dengan perawat PP1 dan PP2 setelah visite dr. SM.</td></tr><tr><td>12.00–14.00</td><td>Ilmiah online; buat <strong>BCD jam 13.00</strong>.</td></tr><tr><td>15.30–17.00</td><td>Operan dua kali: madya-senior, lalu junior-junior.</td></tr></table><div class="hlb"><strong>Jam jaga PICU:</strong> 15.00–07.00 (Aurora). Jaga hari libur 07.00–07.00 (Buku IR AVATAR).</div></div><div class="card"><div class="ctitle"><div class="icon">📊</div> BCD <span class="tg tg-w">wajib</span></div><ul class="kl"><li>Dibuat jam <strong>14.00, 21.00, dan 06.00</strong> dari ERM → Report → Monitoring intensif</li><li>Totalkan, lalu bagi <strong>Darrow</strong>. Diuresis dirata-rata</li><li>Persen = BCD / Darrow × 100%</li><li>Perhatikan <strong>BC kumulatif</strong></li><li>Tujuan: menilai syok atau tidak</li></ul><div class="pins"><button class="pin" onclick="goSub('cairan','cr-rumus')">🧮 Rumus BC, % BC, diuresis</button></div></div><div class="card"><div class="ctitle"><div class="icon">🆕</div> Pasien Baru <span class="tg tg-w">wajib</span></div><ul class="kl"><li>TTV, lalu <strong>lapor senior</strong></li><li>GDS</li><li>Pasang ventilator</li><li>Tunggu <strong>1 jam</strong>, lalu cek AGD</li><li>Foto monitor ventilator dulu saat ambil AGD</li></ul><div class="pins"><button class="pin" onclick="goSub('ventilator','vt-setting')">⚙️ Setting awal ventilator</button><button class="pin" onclick="goSub('ventilator','vt-layar')">🖥️ Layar ventilator</button><button class="pin" onclick="goSub('agd','agd-sum')">🩸 AGD</button></div></div><div class="card"><div class="ctitle"><div class="icon">🫁</div> Setting Awal Ventilator <span class="tg tg-w">wajib</span></div><p style="font-size:.74rem;color:var(--tm);margin-bottom:6px">Contoh: anak 9 tahun, BB 20 kg</p><table class="t"><tr><th>Parameter</th><th>Setting</th></tr><tr><td>VT</td><td>4–8 mL/kg: min 4 × BB × 80/100, maks 8 × BB × 120/100</td></tr><tr><td>MVE</td><td>VT × RR / 1000</td></tr><tr><td>RR</td><td>20</td></tr><tr><td>T ins</td><td>0,8</td></tr><tr><td>AP/PS</td><td>10</td></tr><tr><td>FiO₂</td><td>50%</td></tr><tr><td>Ftrig</td><td>1</td></tr><tr><td>PEEP</td><td>5</td></tr><tr><td>Ukuran ETT</td><td>usia / 4 + 3,5</td></tr><tr><td>Kedalaman ETT</td><td>usia / 2 + 12</td></tr></table><div class="hl">Dengan BB 20 kg dan RR 20: VT 64–192 mL, MVE 1,28–3,84 L/menit (hitungan dari rumus di atas).</div><div class="hl"><strong>Cek:</strong> Bab 2 memakai ΔP 8, sedangkan catatan ini menulis "AP/PS 10". Belum jelas apakah itu ΔP atau pressure support. Tanyakan ke senior.</div><div class="pins"><button class="pin" onclick="goSub('ventilator','vt-setting')">⚙️ Setting Awal (Bab 2)</button><button class="pin" onclick="goSub('ventilator','vt-kasus')">🧮 Contoh kasus</button><button class="pin" onclick="goSub('ventilator','vt-modus')">📈 Modus & parameter</button></div></div><div class="card"><div class="ctitle"><div class="icon">🩸</div> AGD <span class="tg tg-w">wajib</span></div><table class="t"><tr><th>Parameter</th><th>Normal</th><th>Cut off</th></tr><tr><td>pH</td><td>7,35–7,45</td><td>7,40</td></tr><tr><td>pCO₂</td><td>35–45</td><td>40</td></tr><tr><td>HCO₃</td><td>22–26</td><td>24</td></tr></table><div class="hlg"><strong>pH dan pCO₂ berlawanan arah</strong> → respiratorik. <strong>Searah</strong> → bukan respiratorik.</div><div class="pins"><button class="pin" onclick="goSub('agd','agd-sum')">🩸 Rangkuman AGD</button><button class="pin" onclick="goSub('agd','agd-komp')">⚖️ Kompensasi</button></div></div><div class="card"><div class="ctitle"><div class="icon">🍬</div> GDS <span class="tg tg-w">wajib</span></div><ul class="kl"><li>Semua pasien, tiap pagi. Tugas yang jaga.</li></ul></div><div class="card"><div class="ctitle"><div class="icon">🏥</div> Post Operasi <span class="tg tg-t">tahu saja</span></div><ul class="kl"><li>Tanyakan jenis anestesi, induksi, dan dosis</li><li>Minta nomor PPDS anestesi</li></ul></div><div class="card"><div class="ctitle"><div class="icon">💊</div> Obat Emergency (contoh Aurora)</div><table class="t"><tr><th>Obat</th><th>Catatan</th></tr><tr><td>Midazolam</td><td>0,1 mg/kgBB/jam, maksimal 0,5 mg/kgBB/jam. Tidak diencerkan</td></tr><tr><td>Epinefrin</td><td>Cardiac arrest 0,1 mg/kg (1:10.000, yaitu 0,1 cc epinefrin + NS sampai 1 cc). Maintenance 0,02–0,1 mcg/kg/menit, titrasi sampai 1–2</td></tr><tr><td>Dexmedetomidine</td><td>0,2 mcg/kg/jam. Sediaan PICU 0,2 mg/2 mL</td></tr><tr><td>Propofol</td><td>SP 1 mg/kgBB/jam</td></tr><tr><td>Manitol</td><td>Contoh butuh 25 g = 125 cc</td></tr></table><div class="hl"><strong>Stok obat pemerintahan:</strong> epinefrin, dobutamin, dopamin, norepinefrin, midazolam, fenitoin, diazepam, dan lainnya.</div><div class="hlr">⚠️ <strong>Cek dosis epinefrin arrest.</strong> Dosis PALS epinefrin 1:10.000 adalah 0,01 mg/kg (= 0,1 mL/kg). Tertulis 0,1 mg/kg, kemungkinan maksudnya 0,1 mL/kg. Detail obat lain ada di Bab 5.</div><div class="pins"><button class="pin" onclick="goSub('obat','ob-ring')">📋 Ringkasan obat</button><button class="pin" onclick="goSub('obat','ob-kalk')">🧮 Kalkulator obat</button><button class="pin" onclick="goSub('obat','ob-data')">🗃️ Data dosis</button></div></div><div class="card"><div class="ctitle"><div class="icon">🖥️</div> ERM dan Administrasi</div><table class="t"><tr><th>Topik</th><th>Langkah</th></tr><tr><td>RME pasien baru</td><td>Wajib isi assessment awal, total careplan, resume, spesialistik anak, dan checklist intensif (akun madya, senior, atau dr. SM)</td></tr><tr><td>Pasien masuk dari IGD</td><td>Transaksi IGD → cari pasien → checklist intensif → terima, lalu pilih PICU atau Mawar 1</td></tr><tr><td>Resep</td><td>Obat PICU diresepkan jaga malam. TPN ke UPOS (resep biru) sampai jam 11. Pengantaran obat 2 kali (10.00–16.00), di luar itu pilih cito</td></tr><tr><td>Rujukan ke TS lain</td><td>ERM → Konsultasi → tambah → isi raber, DPJP, YTH TS, tujuan. Simpan, screenshot, kirim ke residen yang dituju</td></tr><tr><td>Order lab</td><td>Darah rutin dengan diff. Kimia klinik: pilih albumin dan elektrolit plus magnesium (tulis Cl). Kultur darah dan sputum: pilih "kultur dan uji sensitivitas antibiotik"</td></tr><tr><td>Form KFT</td><td>Untuk obat atau alat berbiaya besar; ditandatangani dan dicap dr. SM</td></tr><tr><td>Pink bangsal</td><td>PICU yang membuat pink untuk pasien ke atau dari bangsal dan dari HCU, dengan SS SOAP</td></tr></table></div><div class="card"><div class="ctitle"><div class="icon">❓</div> Perlu Dicek</div><ul class="kl"><li><strong>TPN ke UPOS:</strong> alur harian menulis sebelum jam 09.00, bagian resep menulis sampai jam 11</li><li><strong>BCD siang:</strong> alur harian jam 13.00, bagian BCD jam 14.00</li><li><strong>MAP normal 50 + 2n:</strong> arti "n" tidak dijelaskan (kemungkinan usia dalam tahun)</li><li><strong>Pembagian tugas junior yang hanya orientasi di PICU:</strong> belum ada di sumber. Tanyakan ke senior satu tingkat saat tiba.</li></ul><p class="src">Sumber: ringkasan IR PICU (Aurora, bagian PICU dan stase ETIA; Buku IR AVATAR). Link kerja ada di tab 🔗 Link.</p><div class="pins"><button class="pin" onclick="goSub('link','')">🔗 Buka Link Penting</button></div></div></div>
+  <div id="jg-orientasi" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">⚡</div> Pintasan Cepat</div><div class="pins"><button class="pin" onclick="goSub('bcd','bcd-pasien')">📊 BCD PICU</button><button class="pin" onclick="goSub('ventilator','vt-setting')">🫁 Ventilator</button><button class="pin" onclick="goSub('agd','agd-sum')">🩸 AGD</button><button class="pin" onclick="goSub('obat','ob-ring')">💊 Obat</button><button class="pin" onclick="goSub('obat','ob-kalk')">🧮 Kalkulator obat</button><button class="pin" onclick="goSub('link','')">🔗 Link</button></div></div><div class="card"><div class="ctitle"><div class="icon">🚪</div> Hari Pertama</div><label class="step"><input type="checkbox" data-k="or-1"><span class="st-n">1</span><span class="st-b"><span class="st-x">Buka jas dokter, pakai <strong>baju jaga</strong>. Snelli tetap dibawa.</span></span></label><label class="step"><input type="checkbox" data-k="or-2"><span class="st-n">2</span><span class="st-b"><span class="st-x">Tas disimpan di <strong>penyimpanan kayu</strong> yang dibuka ke atas, lewat pintu pertama setelah belokan.</span></span></label><label class="step"><input type="checkbox" data-k="or-3"><span class="st-n">3</span><span class="st-b"><span class="st-x">Nomor bed mulai <strong>134</strong>, maksimal <strong>10 pasien</strong>.</span></span></label><label class="step"><input type="checkbox" data-k="or-4"><span class="st-n">4</span><span class="st-b"><span class="st-x">Orientasi sifatnya <strong>observasi</strong> dan ikut kegiatan senior.</span></span></label><label class="step"><input type="checkbox" data-k="or-5"><span class="st-n">5</span><span class="st-b"><span class="st-x">Hari <strong>Jumat</strong>: ilmiah mulai pukul <strong>10.30</strong>, dan ada <strong>resep iter</strong> untuk rawat inap Sabtu–Minggu.</span></span></label><label class="step"><input type="checkbox" data-k="or-6"><span class="st-n">6</span><span class="st-b"><span class="st-x">Siapkan <strong>stetoskop, oksimetri, termometer, alcohol swab</strong> saat visite.</span></span></label><button class="btn btn-s jg-reset" onclick="resetChecks('or')">↺ Reset centang</button></div><div class="card"><div class="ctitle"><div class="icon">🕓</div> Alur Harian Junior (ETIA)</div><table class="t"><tr><th>Waktu</th><th>Kegiatan</th></tr><tr><td>04.30–06.00</td><td>Foto <strong>ventilator</strong> dengan grafik terlihat sampai garis kanan, dan foto <strong>GDS</strong> ke grup PICU (nomor bed dan nama pasien).</td></tr><tr><td>06.00–12.00</td><td>Pemeriksaan fisik; hitung <strong>BC kumulatif, BCD, diuresis, MAP</strong> (normal 50 + 2n). Update <strong>GDocs</strong> (advis, DPH, ventilator, SOAP, hari antibiotik, cakupan, lab). Resepkan <strong>TPN sebelum 09.00</strong>. CC 08.00–09.00 online. Operan dengan perawat PP1 dan PP2 setelah visite dr. SM.</td></tr><tr><td>12.00–14.00</td><td>Ilmiah online; buat <strong>BCD jam 13.00</strong>.</td></tr><tr><td>15.30–17.00</td><td>Operan dua kali: madya-senior, lalu junior-junior.</td></tr></table><div class="hlb"><strong>Jam jaga PICU:</strong> 15.00–07.00 (Aurora). Jaga hari libur 07.00–07.00 (Buku IR AVATAR).</div></div><div class="card"><div class="ctitle"><div class="icon">📊</div> BCD <span class="tg tg-w">wajib</span></div><ul class="kl"><li>Dibuat jam <strong>14.00, 21.00, dan 06.00</strong> dari ERM → Report → Monitoring intensif</li><li>Totalkan, lalu bagi <strong>Darrow</strong> (kebutuhan cairan harian, Holliday-Segar). Diuresis dirata-rata</li><li>Persen = BCD / Darrow × 100%</li><li>Perhatikan <strong>BC kumulatif</strong></li><li>Tujuan: menilai syok atau tidak</li></ul><div class="pins"><button class="pin" onclick="goSub('bcd','bcd-pasien')">📋 BCD PICU</button><button class="pin" onclick="goSub('cairan','cr-rumus')">🧮 Rumus BC, % BC, diuresis</button></div></div><div class="card"><div class="ctitle"><div class="icon">🆕</div> Pasien Baru <span class="tg tg-w">wajib</span></div><ul class="kl"><li>TTV, lalu <strong>lapor senior</strong></li><li>GDS</li><li>Pasang ventilator</li><li>Tunggu <strong>1 jam</strong>, lalu cek AGD</li><li>Foto monitor ventilator dulu saat ambil AGD</li></ul><div class="pins"><button class="pin" onclick="goSub('ventilator','vt-setting')">⚙️ Setting awal ventilator</button><button class="pin" onclick="goSub('ventilator','vt-layar')">🖥️ Layar ventilator</button><button class="pin" onclick="goSub('agd','agd-sum')">🩸 AGD</button></div></div><div class="card"><div class="ctitle"><div class="icon">🫁</div> Setting Awal Ventilator <span class="tg tg-w">wajib</span></div><p style="font-size:.74rem;color:var(--tm);margin-bottom:6px">Contoh: anak 9 tahun, BB 20 kg</p><table class="t"><tr><th>Parameter</th><th>Setting</th></tr><tr><td>VT</td><td>4–8 mL/kg: min 4 × BB × 80/100, maks 8 × BB × 120/100</td></tr><tr><td>MVE</td><td>VT × RR / 1000</td></tr><tr><td>RR</td><td>20</td></tr><tr><td>T ins</td><td>0,8</td></tr><tr><td>AP/PS</td><td>10</td></tr><tr><td>FiO₂</td><td>50%</td></tr><tr><td>Ftrig</td><td>1</td></tr><tr><td>PEEP</td><td>5</td></tr><tr><td>Ukuran ETT</td><td>usia / 4 + 3,5</td></tr><tr><td>Kedalaman ETT</td><td>usia / 2 + 12</td></tr></table><div class="hl">Dengan BB 20 kg dan RR 20: VT 64–192 mL, MVE 1,28–3,84 L/menit (hitungan dari rumus di atas).</div><div class="hl"><strong>Cek:</strong> Bab 2 memakai ΔP 8, sedangkan catatan ini menulis "AP/PS 10". Belum jelas apakah itu ΔP atau pressure support. Tanyakan ke senior.</div><div class="pins"><button class="pin" onclick="goSub('ventilator','vt-setting')">⚙️ Setting Awal (Bab 2)</button><button class="pin" onclick="goSub('ventilator','vt-kasus')">🧮 Contoh kasus</button><button class="pin" onclick="goSub('ventilator','vt-modus')">📈 Modus & parameter</button></div></div><div class="card"><div class="ctitle"><div class="icon">🩸</div> AGD <span class="tg tg-w">wajib</span></div><table class="t"><tr><th>Parameter</th><th>Normal</th><th>Cut off</th></tr><tr><td>pH</td><td>7,35–7,45</td><td>7,40</td></tr><tr><td>pCO₂</td><td>35–45</td><td>40</td></tr><tr><td>HCO₃</td><td>22–26</td><td>24</td></tr></table><div class="hlg"><strong>pH dan pCO₂ berlawanan arah</strong> → respiratorik. <strong>Searah</strong> → bukan respiratorik.</div><div class="pins"><button class="pin" onclick="goSub('agd','agd-sum')">🩸 Rangkuman AGD</button><button class="pin" onclick="goSub('agd','agd-komp')">⚖️ Kompensasi</button></div></div><div class="card"><div class="ctitle"><div class="icon">🍬</div> GDS <span class="tg tg-w">wajib</span></div><ul class="kl"><li>Semua pasien, tiap pagi. Tugas yang jaga.</li></ul></div><div class="card"><div class="ctitle"><div class="icon">🏥</div> Post Operasi <span class="tg tg-t">tahu saja</span></div><ul class="kl"><li>Tanyakan jenis anestesi, induksi, dan dosis</li><li>Minta nomor PPDS anestesi</li></ul></div><div class="card"><div class="ctitle"><div class="icon">💊</div> Obat Emergency (contoh Aurora)</div><table class="t"><tr><th>Obat</th><th>Catatan</th></tr><tr><td>Midazolam</td><td>0,1 mg/kgBB/jam, maksimal 0,5 mg/kgBB/jam. Tidak diencerkan</td></tr><tr><td>Epinefrin</td><td>Cardiac arrest 0,1 mg/kg (1:10.000, yaitu 0,1 cc epinefrin + NS sampai 1 cc). Maintenance 0,02–0,1 mcg/kg/menit, titrasi sampai 1–2</td></tr><tr><td>Dexmedetomidine</td><td>0,2 mcg/kg/jam. Sediaan PICU 0,2 mg/2 mL</td></tr><tr><td>Propofol</td><td>SP 1 mg/kgBB/jam</td></tr><tr><td>Manitol</td><td>Contoh butuh 25 g = 125 cc</td></tr></table><div class="hl"><strong>Stok obat pemerintahan:</strong> epinefrin, dobutamin, dopamin, norepinefrin, midazolam, fenitoin, diazepam, dan lainnya.</div><div class="hlr">⚠️ <strong>Cek dosis epinefrin arrest.</strong> Dosis PALS epinefrin 1:10.000 adalah 0,01 mg/kg (= 0,1 mL/kg). Tertulis 0,1 mg/kg, kemungkinan maksudnya 0,1 mL/kg. Detail obat lain ada di Bab 5.</div><div class="pins"><button class="pin" onclick="goSub('obat','ob-ring')">📋 Ringkasan obat</button><button class="pin" onclick="goSub('obat','ob-kalk')">🧮 Kalkulator obat</button><button class="pin" onclick="goSub('obat','ob-data')">🗃️ Data dosis</button></div></div><div class="card"><div class="ctitle"><div class="icon">🖥️</div> ERM dan Administrasi</div><table class="t"><tr><th>Topik</th><th>Langkah</th></tr><tr><td>RME pasien baru</td><td>Wajib isi assessment awal, total careplan, resume, spesialistik anak, dan checklist intensif (akun madya, senior, atau dr. SM)</td></tr><tr><td>Pasien masuk dari IGD</td><td>Transaksi IGD → cari pasien → checklist intensif → terima, lalu pilih PICU atau Mawar 1</td></tr><tr><td>Resep</td><td>Obat PICU diresepkan jaga malam. TPN ke UPOS (resep biru) sampai jam 11. Pengantaran obat 2 kali (10.00–16.00), di luar itu pilih cito</td></tr><tr><td>Rujukan ke TS lain</td><td>ERM → Konsultasi → tambah → isi raber, DPJP, YTH TS, tujuan. Simpan, screenshot, kirim ke residen yang dituju</td></tr><tr><td>Order lab</td><td>Darah rutin dengan diff. Kimia klinik: pilih albumin dan elektrolit plus magnesium (tulis Cl). Kultur darah dan sputum: pilih "kultur dan uji sensitivitas antibiotik"</td></tr><tr><td>Form KFT</td><td>Untuk obat atau alat berbiaya besar; ditandatangani dan dicap dr. SM</td></tr><tr><td>Pink bangsal</td><td>PICU yang membuat pink untuk pasien ke atau dari bangsal dan dari HCU, dengan SS SOAP</td></tr></table></div><div class="card"><div class="ctitle"><div class="icon">❓</div> Perlu Dicek</div><ul class="kl"><li><strong>TPN ke UPOS:</strong> alur harian menulis sebelum jam 09.00, bagian resep menulis sampai jam 11</li><li><strong>BCD siang:</strong> alur harian jam 13.00, bagian BCD jam 14.00</li><li><strong>MAP normal 50 + 2n:</strong> arti "n" tidak dijelaskan (kemungkinan usia dalam tahun)</li><li><strong>Pembagian tugas junior yang hanya orientasi di PICU:</strong> belum ada di sumber. Tanyakan ke senior satu tingkat saat tiba.</li></ul><p class="src">Sumber: ringkasan IR PICU (Aurora, bagian PICU dan stase ETIA; Buku IR AVATAR). Link kerja ada di tab 🔗 Link.</p><div class="pins"><button class="pin" onclick="goSub('link','')">🔗 Buka Link Penting</button></div></div></div>
   <div id="jg-mata" class="jg-panel">
     <div class="card">
       <div class="ctitle"><div class="icon">👁️</div> Konsul Mata LP</div>
       <div class="empty"><div class="ei">👁️</div><strong>Materi Konsul Mata LP belum diisi</strong><br>Kirim isinya, nanti saya masukkan di sini.</div>
     </div>
   </div>
+</div>
+
+<!-- ══════ BCD PICU ══════ -->
+<div id="bcd" class="sec">
+  <p class="sl">BCD PICU</p>
+  <div class="jg-tabs"><button class="chip active" onclick="showSub('bcd-materi',this)">📖 Materi</button><button class="chip" onclick="showSub('bcd-pasien',this)">📋 Pasien</button></div>
+  <div id="bcd-materi" class="jg-panel active"><div class="hlb">Materi dan logika ini dipindahkan dari modul <strong>BCD PICU</strong> di aplikasi PPDS Tools Anda.</div><div class="card"><div class="ctitle"><div class="icon">🍼</div> KUVS Anak — Panduan Umum</div><ul class="kl"><li>Pasien yang dihitung BCD: tanyakan <strong>BB dan usia (dalam tahun)</strong></li><li>Cara menulis nadi: <strong>Pulse/SpO2</strong></li><li>Pasien yang biasa ditensi (tergantung instruksi): Nefro, Neuro, Alergi</li></ul></div><div class="card"><div class="ctitle"><div class="icon">🥛</div> Oral (Intake Minum 8 Jam Terakhir)</div><table class="t"><tr><th>Wadah</th><th>Volume</th></tr><tr><td>1 gelas plastik Aqua</td><td>240 mL</td></tr><tr><td>1 gelas plastik juice</td><td>400 mL</td></tr><tr><td>Aqua botol</td><td>Lihat kemasan</td></tr><tr><td>ASI</td><td>Anggap 250 cc</td></tr></table></div><div class="card"><div class="ctitle"><div class="icon">🚽</div> Urin</div><div class="mt2">Kalau pakai popok (ditimbang)</div><div class="hl">Timbang di rak depan lift, beratnya dikurangi berat popok bersih.</div><table class="t"><tr><th>Ukuran</th><th>Berat popok bersih</th></tr><tr><td>S</td><td>20 g</td></tr><tr><td>M</td><td>30 g</td></tr><tr><td>L</td><td>40 g</td></tr></table><div class="hl">Banyak pup (BAB): kurangi tambahan −100 g dari berat kotor.</div><div class="mt2" style="margin-top:10px">Kalau tidak ditimbang (perkiraan)</div><table class="t"><tr><th>Ukuran</th><th>Perkiraan</th></tr><tr><td>XL</td><td>250 gram/pampers</td></tr><tr><td>L, M, S</td><td>100 gram/pampers</td></tr></table></div><div class="card"><div class="ctitle"><div class="icon">💉</div> Infus</div><ul class="kl"><li>Lihat angka di monitor (cc/jam) × 8 jam</li><li>Kalau ada ganti transfusi atau infus dilepas dan bingung, tanya residen</li><li>Lihat kecepatan infus paling aman di MAP HITAM di rak-rak depan lift (biasanya dalam X cc/jam, dikali 8 dulu)</li></ul></div><p class="sl" style="margin-top:14px">Rumus Perhitungan</p><div class="card"><div class="ctitle"><div class="icon">1️⃣</div> Balance Cairan (BC)</div><div class="fx">BC = (Oral + Infus) − (Urin + IWL + Muntah/Diare)</div><div class="hl">Tanyakan juga ada muntah/diare (berapa gelas Aqua?). 1 gelas Aqua = 240 mL.</div></div><div class="card"><div class="ctitle"><div class="icon">2️⃣</div> Persentase Balance Cairan</div><div class="fx">% = (BC ÷ Darrow) × 100%</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &gt;20% (hipervolemia)</div></div><div class="card"><div class="ctitle"><div class="icon">3️⃣</div> Diuresis (D)</div><div class="fx">D = Urin ÷ BB ÷ 8 jam</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &lt;1,0 mL/kg/jam</div></div><div class="card"><div class="ctitle"><div class="icon">4️⃣</div> IWL (Insensible Water Loss)</div><div class="fx">IWL (cc/8 jam) = BB (kg) × Konstanta ÷ 3</div><table class="t"><tr><th>Usia</th><th>Konstanta</th></tr><tr><td>0–1 bulan</td><td>50 cc</td></tr><tr><td>1 bulan–1 tahun</td><td>40 cc</td></tr><tr><td>1–5 tahun</td><td>30 cc</td></tr><tr><td>&gt;5 tahun</td><td>20 cc</td></tr></table><div class="hl">IWL = jumlah cairan keluar yang tidak disadari dan sulit dihitung: keringat, uap napas.</div></div><div class="card"><div class="ctitle"><div class="icon">5️⃣</div> Darrow (Kebutuhan Cairan Harian)</div><div class="fx">Darrow = (100 × 10 kg pertama) + (50 × 10 kg kedua) + (20 × BB sisa)</div><div class="hl">Sama dengan rumus Holliday-Segar. Di tab Pasien, kebutuhan cairan/24 jam otomatis terisi saat pasien ditambahkan. Contoh BB 15 kg: 1000 + 5 × 50 = 1250 mL.</div></div><div class="card"><div class="ctitle"><div class="icon">📌</div> Kalkulator Bantu BC</div><div class="hl">Di tab Pasien, buka pasien, lalu tiap kotak shift ada tombol <strong>Hitung Bantu BC</strong>. Tombol itu menghitung Balance dari komponen Oral, Infus, Urin, IWL, dan Muntah/BAB secara otomatis.</div><div class="pins"><button class="pin" onclick="goSub('bcd','bcd-pasien')">📋 Buka tab Pasien</button></div></div><div class="card"><div class="ctitle"><div class="icon">⚠️</div> Cek: Pengingat Furosemid</div><div class="hl">Saat %BC ≥20%, kalkulator menampilkan pengingat furosemid dengan dosis <strong>0,05 mg/kg</strong> (logika asli aplikasi BCD Anda, tidak saya ubah). Angka itu jauh di bawah dosis lazim furosemid 0,5–1 mg/kg (lihat Bab 5, Data Dosis), dan sama dengan batas kecepatan IV maksimal 0,05 mg/kg/<strong>menit</strong> menurut Shann. Verifikasi dengan DPJP sebelum memakai angka itu.</div></div></div>
+  <div id="bcd-pasien" class="jg-panel">
+<div id="bcd-view-list">
+  <div id="bcd-bedmap"></div>
+  <button type="button" class="btn btn-p btn-full" onclick="bcdShowAddPatient()">➕ Tambah Pasien Baru</button>
+  <div class="card" id="bcd-addpatient-card" style="display:none;margin-top:12px">
+    <div class="mt2">Pasien baru</div>
+    <label class="kc-l" for="bcd-new-bed">Nomor bed (PICU 134–143, maksimal 10 pasien)</label>
+    <select id="bcd-new-bed" class="kc-in"></select>
+    <label class="kc-l" for="bcd-new-nama">Nama</label>
+    <input type="text" id="bcd-new-nama" class="kc-in" placeholder="Nama pasien">
+    <label class="kc-l" for="bcd-new-usia">Usia</label>
+    <input type="text" id="bcd-new-usia" class="kc-in" placeholder="mis. 3 tahun atau 8 bulan">
+    <label class="kc-l" for="bcd-new-bb">Berat badan (kg)</label>
+    <input type="number" id="bcd-new-bb" class="kc-in" inputmode="decimal" step="0.1" placeholder="mis. 15" oninput="bcdSuggestKebutuhan()">
+    <label class="kc-l" for="bcd-new-kebutuhan">Kebutuhan cairan/24 jam (mL), Holliday-Segar otomatis, boleh diedit</label>
+    <input type="number" id="bcd-new-kebutuhan" class="kc-in" inputmode="decimal" step="1" placeholder="mis. 1250">
+    <label class="kc-l" for="bcd-new-rm">No. RM (opsional)</label>
+    <input type="text" id="bcd-new-rm" class="kc-in" placeholder="No. RM" inputmode="numeric">
+    <div class="mt2" style="margin-top:12px">🫁 Ventilator</div>
+    <div class="bcd-vseg" id="bcd-new-vseg" data-v="0"><button type="button" data-v="0" class="active">Tidak pakai</button><button type="button" data-v="1">🫁 Pakai ventilator</button></div>
+    <div id="bcd-new-ettbox" style="display:none">
+      <label class="kc-l" for="bcd-new-cuff">Jenis ETT</label>
+      <select id="bcd-new-cuff" class="kc-in"><option value="1">Dengan cuff (usia/4 + 3,5)</option><option value="0">Tanpa cuff (usia/4 + 4)</option></select>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-new-ettno">ETT nomor</label><input type="text" id="bcd-new-ettno" class="kc-in" inputmode="decimal" placeholder="mis. 5,5"></div>
+        <div><label class="kc-l" for="bcd-new-depth">Kedalaman (cm)</label><input type="text" id="bcd-new-depth" class="kc-in" inputmode="decimal" placeholder="mis. 15,5"></div>
+      </div>
+      <p class="src" id="bcd-new-hint"></p>
+      <button type="button" class="pin" onclick="bcdEttAuto('bcd-new-',true)">↻ Pakai saran rumus</button>
+      <label class="bk-chk"><input type="checkbox" id="bcd-new-vinit" checked> Catat setting awal (rumus Bab 2) sebagai setting saat ini (bisa diubah di detail pasien)</label>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button type="button" class="btn btn-s" style="flex:1" onclick="bcdCancelAddPatient()">Batal</button>
+      <button type="button" class="btn btn-p" style="flex:1" onclick="bcdAddPatient()">Simpan Pasien</button>
+    </div>
+  </div>
+  <div id="bcd-patient-list" style="margin-top:12px"></div>
+  <p class="src">Data pasien tersimpan di browser perangkat ini saja. Pakai inisial atau nama samaran bila perlu, dan jangan membagikan file cadangan browser.</p>
+</div>
+
+<div id="bcd-view-detail" class="hidden">
+  <button type="button" class="btn btn-s" onclick="bcdShowListView()">← Daftar pasien</button>
+  <div class="card" id="bcd-detail-header" style="margin-top:10px"></div>
+  <div class="card" id="bcd-vent-card" style="display:none;margin-top:10px">
+    <div class="ctitle"><div class="icon">🫁</div> Setting Ventilator</div>
+    <div class="mt2">Setting awal (otomatis dari rumus Bab 2)</div>
+    <div id="bcd-vent-awal"></div>
+    <div class="mt2" style="margin-top:12px">Setting saat ini</div>
+    <div id="bcd-vent-view"></div>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button type="button" class="btn btn-s" style="flex:1" onclick="bcdVentEditOpen(false)">✏️ Ubah setting</button>
+      <button type="button" class="btn btn-s" style="flex:1" onclick="bcdVentEditOpen(true)">🧮 Pakai setting awal</button>
+    </div>
+    <div id="bcd-vent-form" style="display:none;margin-top:10px">
+      <label class="kc-l" for="bcd-vs-mode">Mode</label>
+      <select class="kc-in" id="bcd-vs-mode"><option value="">Mode (opsional)</option><option value="PC-AC">PC-AC</option><option value="VC-AC">VC-AC</option><option value="PRVC">PRVC</option><option value="SIMV">SIMV</option><option value="PSV">PSV</option><option value="CPAP">CPAP</option></select>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-vs-rr">RR (x/menit)</label><input class="kc-in" id="bcd-vs-rr" type="text" inputmode="decimal" oninput="bcdVsPreview()"></div>
+        <div><label class="kc-l" for="bcd-vs-dp">ΔP (cmH₂O)</label><input class="kc-in" id="bcd-vs-dp" type="text" inputmode="decimal"></div>
+        <div><label class="kc-l" for="bcd-vs-peep">PEEP (cmH₂O)</label><input class="kc-in" id="bcd-vs-peep" type="text" inputmode="decimal"></div>
+        <div><label class="kc-l" for="bcd-vs-fio2">FiO₂ (%)</label><input class="kc-in" id="bcd-vs-fio2" type="text" inputmode="decimal"></div>
+        <div><label class="kc-l" for="bcd-vs-tins">T inspirasi (detik)</label><input class="kc-in" id="bcd-vs-tins" type="text" inputmode="decimal"></div>
+        <div><label class="kc-l" for="bcd-vs-ie">I : E</label><input class="kc-in" id="bcd-vs-ie" type="text" placeholder="1:2"></div>
+        <div><label class="kc-l" for="bcd-vs-ps">AP / PS (cmH₂O)</label><input class="kc-in" id="bcd-vs-ps" type="text" inputmode="decimal"></div>
+        <div><label class="kc-l" for="bcd-vs-ftrig">Flow trigger (L/menit)</label><input class="kc-in" id="bcd-vs-ftrig" type="text" inputmode="decimal"></div>
+      </div>
+      <p class="src" id="bcd-vs-hint"></p>
+      <p class="src" id="bcd-vs-alarm" style="color:var(--m);font-weight:600"></p>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button type="button" class="btn btn-s" style="flex:1" onclick="document.getElementById('bcd-vent-form').style.display='none'">Batal</button>
+        <button type="button" class="btn btn-p" style="flex:1" onclick="bcdVentSave()">Simpan setting</button>
+      </div>
+    </div>
+    <div class="pins"><button class="pin" onclick="goSub('ventilator','vt-setting')">⚙️ Rumus setting awal (Bab 2)</button><button class="pin" onclick="goSub('ventilator','vt-layar')">🖥️ Layar ventilator</button></div>
+  </div>
+  <button type="button" class="btn btn-s btn-full" onclick="bcdEditToggle()">✏️ Ubah bed / ventilator</button>
+  <button type="button" class="btn btn-s btn-full" style="margin-top:8px" onclick="kcUsePatient(bcdCurrentPatientId)">💉 Hitung dosis obat pasien ini</button>
+  <div class="card" id="bcd-edit-card" style="display:none;margin-top:10px">
+    <div class="mt2">Ubah bed dan ventilator</div>
+    <label class="kc-l" for="bcd-ed-bed">Nomor bed</label>
+    <select id="bcd-ed-bed" class="kc-in"></select>
+    <div class="mt2" style="margin-top:12px">🫁 Ventilator</div>
+    <div class="bcd-vseg" id="bcd-ed-vseg" data-v="0"><button type="button" data-v="0" class="active">Tidak pakai</button><button type="button" data-v="1">🫁 Pakai ventilator</button></div>
+    <div id="bcd-ed-ettbox" style="display:none">
+      <label class="kc-l" for="bcd-ed-cuff">Jenis ETT</label>
+      <select id="bcd-ed-cuff" class="kc-in"><option value="1">Dengan cuff (usia/4 + 3,5)</option><option value="0">Tanpa cuff (usia/4 + 4)</option></select>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-ed-ettno">ETT nomor</label><input type="text" id="bcd-ed-ettno" class="kc-in" inputmode="decimal" placeholder="mis. 5,5"></div>
+        <div><label class="kc-l" for="bcd-ed-depth">Kedalaman (cm)</label><input type="text" id="bcd-ed-depth" class="kc-in" inputmode="decimal" placeholder="mis. 15,5"></div>
+      </div>
+      <p class="src" id="bcd-ed-hint"></p>
+      <button type="button" class="pin" onclick="bcdEttAuto('bcd-ed-',true)">↻ Pakai saran rumus</button>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button type="button" class="btn btn-s" style="flex:1" onclick="bcdEditToggle()">Batal</button>
+      <button type="button" class="btn btn-p" style="flex:1" onclick="bcdEditSave()">Simpan</button>
+    </div>
+  </div>
+  <button type="button" class="btn btn-s btn-full" id="bcd-toggle-pulang-btn" onclick="bcdTogglePulang()"></button>
+  <div class="bcd-subtabs">
+    <button class="bcd-st active" data-s="input" onclick="bcdSubTab('input',this)">📝 Input BCD</button>
+    <button class="bcd-st" data-s="ttv" onclick="bcdSubTab('ttv',this)">🩺 TTV</button>
+    <button class="bcd-st" data-s="riwayat" onclick="bcdSubTab('riwayat',this)">🕒 Riwayat</button>
+  </div>
+  <div class="bcd-sp active" id="bcd-sub-input">
+    <div class="card"><label class="kc-l" for="bcd-tanggal" style="margin-top:0">Tanggal</label><input type="date" id="bcd-tanggal" class="kc-in" onchange="bcdLoadDay()"></div>
+    <div class="bcd-shift-grid" id="bcd-shift-grid"></div>
+    <div class="card"><div class="ctitle"><div class="icon">📊</div> Total 24 Jam</div><div id="bcd-total-content"></div></div>
+    <button type="button" class="btn btn-p btn-full" onclick="bcdSaveDay()">💾 Simpan Data Hari Ini</button>
+    <div id="bcd-save-msg" class="src" style="text-align:center;margin-top:6px"></div>
+  </div>
+  <div class="bcd-sp" id="bcd-sub-ttv">
+    <div class="card"><div class="ctitle"><div class="icon">🩺</div> Catat TTV</div>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-ttv-date" style="margin-top:0">Tanggal</label><input type="date" id="bcd-ttv-date" class="kc-in" onchange="bcdTtvRender()"></div>
+        <div><label class="kc-l" for="bcd-ttv-time" style="margin-top:0">Jam</label><div style="display:flex;gap:6px;align-items:center"><input type="time" id="bcd-ttv-time" class="kc-in"><button type="button" class="pin" style="margin:0;white-space:nowrap" onclick="bcdTtvNow()">Sekarang</button></div></div>
+      </div>
+      <label class="kc-l">Tekanan darah (mmHg)</label>
+      <div class="grid2"><input type="text" id="bcd-ttv-sis" class="kc-in" inputmode="decimal" placeholder="Sistolik"><input type="text" id="bcd-ttv-dia" class="kc-in" inputmode="decimal" placeholder="Diastolik"></div>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-ttv-suhu">Suhu (°C)</label><input type="text" id="bcd-ttv-suhu" class="kc-in" inputmode="decimal" placeholder="mis. 36,8"></div>
+        <div><label class="kc-l" for="bcd-ttv-nadi">Nadi (x/menit)</label><input type="text" id="bcd-ttv-nadi" class="kc-in" inputmode="decimal" placeholder="mis. 120"></div>
+      </div>
+      <div class="grid2">
+        <div><label class="kc-l" for="bcd-ttv-rr">RR (x/menit)</label><input type="text" id="bcd-ttv-rr" class="kc-in" inputmode="decimal" placeholder="mis. 24"></div>
+        <div><label class="kc-l" for="bcd-ttv-spo2">SpO₂ (%), opsional</label><input type="text" id="bcd-ttv-spo2" class="kc-in" inputmode="decimal" placeholder="mis. 98"></div>
+      </div>
+      <button type="button" class="btn btn-p btn-full" style="margin-top:12px" onclick="bcdTtvAdd()">💾 Simpan TTV</button>
+    </div>
+    <div class="card"><div class="ctitle"><div class="icon">🕒</div> TTV pada tanggal ini</div><div id="bcd-ttv-list"></div><p class="src" id="bcd-ttv-ref"></p></div>
+  </div>
+  <div class="bcd-sp" id="bcd-sub-riwayat"><div id="bcd-riwayat-hari-list"></div></div>
+</div>
+</div>
 </div>
 
 <!-- ══════ BAB 2 — VENTILATOR ══════ -->
@@ -425,7 +636,7 @@ details.dd[open] summary{margin-bottom:6px}
 <div id="cairan" class="sec">
   <p class="sl">Bab 4 — Cairan</p>
   <div class="jg-tabs"><button class="chip active" onclick="showSub('cr-rumus',this)">🧮 Rumus</button><button class="chip" onclick="showSub('cr-kal',this)">🔥 Kalori Parenteral</button><button class="chip" onclick="showSub('cr-tpn',this)">🧪 TPN Dextrose</button><button class="chip" onclick="showSub('cr-na',this)">🧂 Kandungan Na</button><button class="chip" onclick="showSub('cr-sch',this)">🔥 Schofield</button></div>
-  <div id="cr-rumus" class="jg-panel active"><div class="card"><div class="ctitle"><div class="icon">1️⃣</div> Balance Cairan (BC)</div><div class="fx">BC = (Oral + Infus) − (Urin + IWL + Muntah/Diare)</div><div class="hl">Tanyakan juga ada muntah/diare (berapa gelas Aqua?) — 1 gelas Aqua = 240 mL.</div></div><div class="card"><div class="ctitle"><div class="icon">2️⃣</div> Persentase Balance Cairan</div><div class="fx">% = (BC ÷ Darrow) × 100%</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &gt;20% (hipervolemia)</div><div class="hl"><strong>Cek:</strong> istilah "Darrow" juga dipakai di catatan orientasi PICU (BCD dibagi Darrow), jadi kemungkinan bukan salah tulis. Belum jelas angka apa yang dipakai sebagai Darrow, tanyakan ke senior.</div></div><div class="card"><div class="ctitle"><div class="icon">3️⃣</div> Diuresis (D)</div><div class="fx">D = Urin ÷ BB ÷ 8 jam</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &lt;1,0 mL/kg/jam</div></div><div class="card"><div class="ctitle"><div class="icon">4️⃣</div> IWL (Insensible Water Loss)</div><div class="fx">IWL (cc/8 jam) = BB (kg) × Konstanta ÷ 3</div><table class="t"><tr><th>Usia</th><th>Konstanta</th></tr><tr><td>0–1 bulan</td><td>50 cc</td></tr><tr><td>1 bulan–1 tahun</td><td>40 cc</td></tr><tr><td>1–5 tahun</td><td>30 cc</td></tr><tr><td>&gt;5 tahun</td><td>20 cc</td></tr></table><div class="hlb">IWL = jumlah cairan keluar yang tidak disadari dan sulit dihitung — keringat, uap napas.</div></div></div>
+  <div id="cr-rumus" class="jg-panel active"><div class="card"><div class="ctitle"><div class="icon">1️⃣</div> Balance Cairan (BC)</div><div class="fx">BC = (Oral + Infus) − (Urin + IWL + Muntah/Diare)</div><div class="hl">Tanyakan juga ada muntah/diare (berapa gelas Aqua?) — 1 gelas Aqua = 240 mL.</div></div><div class="card"><div class="ctitle"><div class="icon">2️⃣</div> Persentase Balance Cairan</div><div class="fx">% = (BC ÷ Darrow) × 100%</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &gt;20% (hipervolemia)</div><div class="hl"><strong>Darrow</strong> = kebutuhan cairan harian (rumus Holliday-Segar), lihat kartu 5️⃣ di bawah. Penjelasan ini dari modul BCD PICU di aplikasi PPDS Tools Anda.</div></div><div class="card"><div class="ctitle"><div class="icon">3️⃣</div> Diuresis (D)</div><div class="fx">D = Urin ÷ BB ÷ 8 jam</div><div class="hlr">⚠️ Laporkan di kertas lapor apabila &lt;1,0 mL/kg/jam</div></div><div class="card"><div class="ctitle"><div class="icon">4️⃣</div> IWL (Insensible Water Loss)</div><div class="fx">IWL (cc/8 jam) = BB (kg) × Konstanta ÷ 3</div><table class="t"><tr><th>Usia</th><th>Konstanta</th></tr><tr><td>0–1 bulan</td><td>50 cc</td></tr><tr><td>1 bulan–1 tahun</td><td>40 cc</td></tr><tr><td>1–5 tahun</td><td>30 cc</td></tr><tr><td>&gt;5 tahun</td><td>20 cc</td></tr></table><div class="hlb">IWL = jumlah cairan keluar yang tidak disadari dan sulit dihitung — keringat, uap napas.</div></div><div class="card"><div class="ctitle"><div class="icon">5️⃣</div> Darrow (Kebutuhan Cairan Harian)</div><div class="fx">Darrow = (100 × 10 kg pertama) + (50 × 10 kg kedua) + (20 × BB sisa)</div><div class="hl">Sama dengan Holliday-Segar. Contoh BB 15 kg: 1000 + 5 × 50 = 1250 mL/24 jam.</div><div class="pins"><button class="pin" onclick="goSub('bcd','bcd-pasien')">📋 BCD PICU</button></div></div></div>
   <div id="cr-kal" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">🔥</div> Kalori Parenteral dari Cairan Infus</div><div class="hl">RL, NaCl, HAES → <strong>tidak berkalori</strong></div><table class="t"><tr><th>Cairan</th><th>Rumus kalori</th></tr><tr><td>D5% = D5% ¼ NS</td><td>5/100 × Σ cc yang masuk × 4</td></tr><tr><td>D7,5%</td><td>7,5/100 × Σ cc yang masuk × 4</td></tr><tr><td>D10%</td><td>10/100 × Σ cc yang masuk × 4</td></tr><tr><td>Aminosteril 6%</td><td>6/100 × Σ cc yang masuk × 4</td></tr><tr><td>Lipofundin 20%</td><td>20/100 × Σ cc yang masuk × 4</td></tr><tr><td>Plasbumin 20%</td><td>20/100 × Σ cc yang masuk × 4</td></tr><tr><td>Plasmanate</td><td>5/100 × Σ cc yang masuk × 4</td></tr></table><div class="hl"><strong>Cek:</strong> faktor ×4 ditulis sama untuk semua cairan. Lipid umumnya 9 kcal/g (Lipofundin 20% ≈ 2 kcal/mL), jadi baris Lipofundin perlu diverifikasi ke sumber.</div></div></div>
   <div id="cr-tpn" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">🧪</div> TPN Dextrose — Contoh Perhitungan</div><div class="hlb"><strong>Kasus:</strong> Anak, BB 9 kg, GIR 5, via UVC. Kebutuhan cairan 800 cc/hari = 33 cc/jam.</div><div class="mt2" style="margin-top:8px">Dextrose</div><div class="fx">D…% = (GIR × BB × 6) / (mL/jam)<br>= (5 × 9 × 6) / 33 = <strong>8,1%</strong></div><div class="mt2">D40%</div><div class="fx">D40% = ((% Dextrose − 5) × mL/hari) / 35<br>= ((8,1 − 5) × 800) / 35 = <strong>70 mL</strong></div><div class="mt2">Elektrolit</div><div class="fx">KCl = 1 mL/kgBB = 1 × 9 = 9 ≈ <strong>10 mL</strong><br>Ca Glukonas = 1 mL/kgBB = 1 × 9 = 9 ≈ <strong>10 mL</strong></div><div class="hlg"><strong>Hasil:</strong> D 8,1% (GIR 5) = D5% ½NS 710 mL + D40% 70 mL + KCl 10 mL + Ca Glukonas 10 mL = <strong>800 mL/hari = 33 mL/jam</strong></div></div></div>
   <div id="cr-na" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">🧂</div> Kandungan Natrium Cairan</div><table class="t"><tr><th>Cairan</th><th>Na (mEq/L)</th></tr><tr><td>D5% ¼ NS</td><td><strong>38,5</strong></td></tr><tr><td>D5% ½ NS</td><td><strong>77</strong></td></tr><tr><td>NS 0,9%</td><td><strong>154</strong></td></tr><tr><td>NS 3%</td><td><strong>514</strong></td></tr></table><div class="hl"><strong>Cek:</strong> NaCl 3% umumnya tercantum 513 mEq/L (di catatan tertulis 514). Satuan saya tulis mEq/L.</div></div></div>
@@ -457,10 +668,14 @@ details.dd[open] summary{margin-bottom:6px}
   <div id="ob-lain" class="jg-panel"><div class="card"><div class="ctitle"><div class="icon">🫀</div> Amiodaron</div><div class="meta"><span class="pill">Dosis 5 mcg/kg/menit</span><span class="pill">Sediaan 50 mg/mL</span><span class="pill">Ampul 3 cc = 150 mg</span></div><div class="fx">Contoh BB 20 kg, pengenceran 12 cc NS untuk 24 jam:<br>Dosis rumatan = 5 × 20 × 24 × 60 : 1000 = 144 mg</div><div class="hl"><strong>Cek:</strong> amiodaron biasanya diencerkan dengan D5%, bukan NS. Mohon verifikasi pelarut yang dipakai di PICU.</div></div><div class="card"><div class="ctitle"><div class="icon">💧</div> Furosemid</div><div class="meta"><span class="pill">Sediaan 20 mg/2 mL</span></div><table class="t"><tr><th>Indikasi</th><th>Dosis</th></tr><tr><td>Rutin</td><td>1 mg/kg/8 jam</td></tr><tr><td>Koreksi</td><td>0,5–1 mg/kg/bolus</td></tr></table></div><div class="card"><div class="ctitle"><div class="icon">🧊</div> Manitol</div><div class="meta"><span class="pill">500 mL berisi 100 gr manitol</span><span class="pill">Dosis 0,5 gr/kg/8 jam</span></div><div class="fx">Contoh: butuh 25 gr → butuh 125 cc manitol</div><div class="hl"><strong>Cek:</strong> di sumber tertulis "100 mg dalam 500 cc". Dari contoh 25 gr = 125 cc, yang dimaksud 100 <strong>gr</strong>.</div></div></div>
   <div id="ob-kalk" class="jg-panel"><div class="hl"><strong>Perhatian:</strong> data dosis berasal dari <em>Drug Doses</em> (Shann), edisi ke-17 tahun 2017. Di halaman judulnya tertulis edisi ini tidak boleh dipakai setelah Desember 2020, jadi cocokkan dengan edisi terbaru atau protokol RS sebelum dipakai. Hanya obat PICU terpilih yang dimasukkan.</div>
 <div class="card"><div class="ctitle"><div class="icon">🧮</div> Kalkulator Dosis dan Infus</div>
+<label class="kc-l" for="kcPas" style="margin-top:0">Pasien (ambil dari BCD PICU)</label>
+<select class="kc-in" id="kcPas"><option value="">Isi manual</option></select>
 <div class="grid2">
+ <div><label class="kc-l" for="kcNama">Nama (opsional)</label><input class="kc-in" id="kcNama" type="text" placeholder="Nama pasien"></div>
  <div><label class="kc-l" for="kcBB">Berat badan (kg)</label><input class="kc-in" id="kcBB" type="text" inputmode="decimal" placeholder="mis. 12"></div>
- <div><label class="kc-l" for="kcDrug">Obat</label><select class="kc-in" id="kcDrug"></select></div>
 </div>
+<label class="kc-l" for="kcDrug">Obat</label><select class="kc-in" id="kcDrug"></select>
+<div id="kcHead"></div>
 <div id="kcBolus" style="margin-top:8px"></div>
 <div id="kcInfBox" style="margin-top:10px">
  <div class="mt2">Infus</div>
@@ -472,13 +687,14 @@ details.dd[open] summary{margin-bottom:6px}
  <select class="kc-in" id="kcVol"><option>8</option><option>12</option><option selected>24</option><option>48</option></select>
 </div>
 <div id="kcInf"></div>
+<div id="kcLabelBox" style="margin-top:12px;display:none"><div class="mt2">📋 Label setting obat (nama, BB, dosis)</div><pre class="fx tpl" id="kcLabelTxt"></pre><button type="button" class="btn btn-s jg-reset" onclick="copyTpl('kcLabelTxt',this)">📋 Salin label</button></div>
 </div>
 <div class="card"><div class="ctitle"><div class="icon">ℹ️</div> Logika Perhitungan</div>
 <ul class="kl">
 <li><strong>Cara buku:</strong> obat sebanyak (mg/kg × BB) dilarutkan sampai volume tertentu, sehingga kecepatan mL/jam langsung mewakili dosis. Contoh 6 mg/kg dalam 100 mL, 1 mL/jam = 1 mcg/kg/menit.</li>
 <li><strong>Rumus umum:</strong> kecepatan (mL/jam) = dosis (mcg/kg/menit) × BB × 60 / konsentrasi (mcg/mL).</li>
 <li><strong>Cara stase:</strong> total 24 jam (mg) = BB × dosis (mcg/kg/menit) × 24 × 60 / 1000, dilarutkan sampai volume akhir, kecepatan = volume / 24.</li>
-<li>Dosis per jam dikonversi dulu ke per menit: mcg/kg/jam ÷ 60, mg/kg/jam × 1000 ÷ 60.</li></ul></div></div>
+<li>Dosis per jam dikonversi dulu ke per menit: mcg/kg/jam ÷ 60, mg/kg/jam × 1000 ÷ 60.</li><li><strong>Label setting obat:</strong> nama, bed, BB, obat, dosis, dan kecepatan ditulis dalam satu teks yang bisa disalin untuk ditempel di spuit atau grup.</li></ul></div></div>
   <div id="ob-data" class="jg-panel"><div class="hlb">Ringkasan dosis obat PICU terpilih dari <em>Drug Doses</em> (Shann, edisi 2017), dituliskan ulang. Edisi ini sudah lewat masa pakainya (Desember 2020), jadi verifikasi dulu.</div>
 <input class="kc-in" id="kdQ" type="text" placeholder="Cari obat atau golongan" style="margin-bottom:10px">
 <div id="kdList"></div></div>
@@ -1518,6 +1734,7 @@ function showSec(id,el){
   if(el)el.classList.add('active');
   if(id==='flashcard')initFC();
   if(id==='kuis')initQuizSetup();
+  if(id==='bcd'&&typeof bcdShowListView==='function')bcdShowListView();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function goSec(id){
@@ -1756,31 +1973,46 @@ function kcPick(){
   }
   kcCalc();
 }
+function kcPlain(s){return String(s).replace(/<br\s*\/?>/g,'\n').replace(/<[^>]+>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');}
+function kcLabelSet(d,bb,lines){
+  const box=document.getElementById('kcLabelBox');
+  if(!lines||!lines.length||!(bb>0)){box.style.display='none';return;}
+  const nm=(document.getElementById('kcNama').value||'').trim(), now=new Date();
+  const ts=bcdPad(now.getDate())+'/'+bcdPad(now.getMonth()+1)+'/'+now.getFullYear()+' '+bcdPad(now.getHours())+':'+bcdPad(now.getMinutes());
+  const head=['SETTING OBAT','Pasien: '+(nm||'-')+(kcBed?' (Bed '+kcBed+')':'')+' | BB '+kf(bb)+' kg','Obat: '+d.n,'Dicatat: '+ts,'---'];
+  document.getElementById('kcLabelTxt').textContent=head.concat(lines).join('\n');
+  box.style.display='block';
+}
 function kcCalc(){
   const d=DRUGS[+document.getElementById('kcDrug').value];
   const bb=kn(document.getElementById('kcBB').value);
-  const ob=document.getElementById('kcBolus'),oi=document.getElementById('kcInf');
-  if(!(bb>0)){ob.innerHTML='<div class="empty" style="padding:12px">Isi berat badan dulu.</div>';oi.innerHTML='';return;}
+  const ob=document.getElementById('kcBolus'),oi=document.getElementById('kcInf'),hd=document.getElementById('kcHead');
+  if(!(bb>0)){hd.innerHTML='';ob.innerHTML='<div class="empty" style="padding:12px">Isi berat badan dulu.</div>';oi.innerHTML='';kcLabelSet(d,bb,[]);return;}
+  const nm=(document.getElementById('kcNama').value||'').trim();
+  hd.innerHTML='<div class="kc-head">👤 '+(nm?'<strong>'+bcdEsc(nm)+'</strong>'+(kcBed?' · Bed '+kcBed:'')+' · ':'')+'BB <strong>'+kf(bb)+' kg</strong> · '+d.n+'</div>';
+  const L=[];
   let h='';
   if(d.bolus){
-    h+='<div class="mt2">Dosis sekali pakai</div><table class="t"><tr><th>Indikasi</th><th>Per kg</th><th>Total</th></tr>';
+    h+='<div class="mt2">Dosis sekali pakai</div><table class="t"><tr><th>Indikasi</th><th>Per kg</th><th>Total ('+kf(bb)+' kg)</th></tr>';
     d.bolus.forEach(b=>{
       let lo=b.lo*bb,hi=b.hi*bb,cap='';
       if(b.max){if(hi>b.max){hi=b.max;cap=' (dibatasi maks '+kf(b.max)+' '+b.mu+')';}if(lo>b.max)lo=b.max;}
       const tu=TU[b.u];
-      let tot=kr(lo,hi)+' '+tu+cap;
-      if(b.conv)tot+='<br><small>= '+kr(lo/b.conv.c,hi/b.conv.c)+' '+b.conv.u+' '+b.conv.l+'</small>';
+      let tot=kr(lo,hi)+' '+tu+cap, plainTot=tot;
+      if(b.conv){plainTot+=' (= '+kr(lo/b.conv.c,hi/b.conv.c)+' '+b.conv.u+' '+b.conv.l+')';tot+='<br><small>= '+kr(lo/b.conv.c,hi/b.conv.c)+' '+b.conv.u+' '+b.conv.l+'</small>';}
       h+='<tr><td>'+b.l+(b.note?'<br><small>'+b.note+'</small>':'')+'</td><td>'+kr(b.lo,b.hi)+' '+b.u+'</td><td><strong>'+tot+'</strong></td></tr>';
+      L.push(kcPlain(b.l)+': '+kr(b.lo,b.hi)+' '+b.u+' = '+plainTot);
     });
     h+='</table>';
   }
   ob.innerHTML=h||'<div class="hl">Obat ini tidak punya dosis sekali pakai di data.</div>';
-  if(!d.inf){oi.innerHTML=d.note?'<div class="hlb">'+d.note+'</div>':'';return;}
+  if(!d.inf){oi.innerHTML=d.note?'<div class="hlb">'+d.note+'</div>':'';kcLabelSet(d,bb,L);return;}
   const dose=kn(document.getElementById('kcDose').value);
   let o='';
-  if(!(dose>0)){oi.innerHTML='<div class="hl">Isi dosis target.</div>';return;}
+  if(!(dose>0)){oi.innerHTML='<div class="hl">Isi dosis target.</div>';kcLabelSet(d,bb,L);return;}
   const dm=dose*UF[d.inf.u];
-  if(dose<d.inf.lo||dose>d.inf.hi)o+='<div class="hlr">⚠️ Dosis di luar rentang data ('+kr(d.inf.lo,d.inf.hi)+' '+d.inf.u+').</div>';
+  L.push('Infus: '+kf(dose)+' '+d.inf.u+' = '+kf(dm*bb*60/1000,3)+' mg/jam');
+  if(dose<d.inf.lo||dose>d.inf.hi){o+='<div class="hlr">⚠️ Dosis di luar rentang data ('+kr(d.inf.lo,d.inf.hi)+' '+d.inf.u+').</div>';L.push('PERHATIAN: dosis di luar rentang data ('+kr(d.inf.lo,d.inf.hi)+' '+d.inf.u+')');}
   o+='<div class="mt2" style="margin-top:8px">A. Pengenceran standar (buku)</div>';
   const rows=(d.std||[]).filter(r=>(!r.bbmax||bb<r.bbmax)&&(!r.bbmin||bb>=r.bbmin));
   const fit=rows.filter(r=>dose>=r.dlo&&dose<=r.dhi);
@@ -1792,6 +2024,7 @@ function kcCalc(){
       line='Larutkan <strong>'+kf(mg,3)+' mg</strong> dalam <strong>'+r.vol+' mL</strong>'+(r.d?' ('+r.d+')':'')+' → <strong>'+kf(rate)+' mL/jam</strong>';}
     else{rate=dm*bb*60/(r.neat*1000);line='Tanpa pengenceran ('+(r.d||kf(r.neat)+' mg/mL')+') → <strong>'+kf(rate)+' mL/jam</strong>';}
     o+='<div class="fx">'+line+'</div>';
+    L.push('Pengenceran buku: '+kcPlain(line));
     if(d.minrate&&rate<d.minrate)o+='<div class="hlr">⚠️ Kecepatan &lt;'+d.minrate+' mL/jam dapat membuat tekanan darah naik turun. Pilih pengenceran yang lebih pekat.</div>';
   });
   const vol=kn(document.getElementById('kcVol').value),stock=kn(document.getElementById('kcStock').value);
@@ -1802,8 +2035,10 @@ function kcCalc(){
     if(vol-ml<0)l2+='<br><span style="color:#C0392B">⚠️ Volume obat melebihi volume akhir. Pilih volume akhir lebih besar.</span>';}
   else l2+='<br><small>Isi konsentrasi stok untuk menghitung mL obat.</small>';
   o+='<div class="fx">'+l2+'</div>';
+  L.push('Cara 24 jam: '+kcPlain(l2).replace(/\n/g,'\n  '));
   if(d.note)o+='<div class="hlb">'+d.note+'</div>';
   oi.innerHTML=o;
+  kcLabelSet(d,bb,L);
 }
 function kcData(){
   const q=(document.getElementById('kdQ').value||'').toLowerCase();
@@ -1854,6 +2089,857 @@ function goSub(sec,sub){
   const b=[...document.querySelectorAll('#'+sec+' .jg-tabs .chip')].find(c=>(c.getAttribute('onclick')||'').includes("'"+sub+"'"));
   if(b){showSub(sub,b);b.scrollIntoView({inline:'center',block:'nearest'});}
 }
+
+/* ====== BCD PICU (logika dipindahkan dari aplikasi PPDS Tools) ====== */
+const BCD_STORAGE_KEY='bcd_picu_patients';
+const BCD_SHIFT_LABELS=['14.00','21.00','06.00'];
+let bcdCurrentPatientId=null;
+var BCD_BED_START=134, BCD_BED_COUNT=10; /* PICU: bed 134–143, maksimal 10 pasien */
+
+function hollidaySegarDaily(bb){
+  if(bb<=10) return bb*100;
+  if(bb<=20) return 1000+(bb-10)*50;
+  return 1500+(bb-20)*20;
+}
+function bcdEsc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function bcdGetPatients(){
+  try{ return JSON.parse(localStorage.getItem(BCD_STORAGE_KEY))||[]; }catch(e){ return []; }
+}
+function bcdSavePatients(list){
+  try{ localStorage.setItem(BCD_STORAGE_KEY,JSON.stringify(list)); return true; }
+  catch(e){ alert('Data tidak bisa disimpan di browser ini.'); return false; }
+}
+function bcdTodayStr(){
+  const d=new Date();
+  return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10);
+}
+function bcdVal(id){ return document.getElementById(id).value; }
+
+/* ═══ VIEW ═══ */
+function bcdShowListView(){
+  bcdCurrentPatientId=null;
+  document.getElementById('bcd-view-detail').classList.add('hidden');
+  document.getElementById('bcd-view-list').classList.remove('hidden');
+  bcdCancelAddPatient();
+  bcdRenderPatientList();
+}
+
+/* ═══ TAMBAH PASIEN ═══ */
+function bcdSuggestKebutuhan(){
+  const bb=parseFloat(bcdVal('bcd-new-bb'));
+  if(bb>0) document.getElementById('bcd-new-kebutuhan').value=hollidaySegarDaily(bb).toFixed(0);
+}
+function bcdDeletePatient(id,ev){
+  if(ev) ev.stopPropagation();
+  if(!confirm('Hapus pasien ini beserta seluruh riwayat BCD-nya?')) return;
+  bcdSavePatients(bcdGetPatients().filter(function(p){return p.id!==id;}));
+  bcdRenderPatientList();
+}
+/* ═══ DETAIL PASIEN ═══ */
+function bcdGetCurrentPatient(){ return bcdGetPatients().find(function(x){return x.id===bcdCurrentPatientId;}); }
+function bcdLoadDay(){
+  const p=bcdGetCurrentPatient(); if(!p) return;
+  const date=bcdVal('bcd-tanggal')||bcdTodayStr();
+  const dayData=p.days[date]||{shifts:[{balance:'',diuresis:''},{balance:'',diuresis:''},{balance:'',diuresis:''}]};
+  bcdRenderShiftGrid(dayData);
+}
+
+function bcdRenderShiftGrid(dayData){
+  const grid=document.getElementById('bcd-shift-grid');
+  grid.innerHTML=BCD_SHIFT_LABELS.map(function(label,i){
+    const s=dayData.shifts[i]||{balance:'',diuresis:''};
+    const bv=(s.balance!==undefined&&s.balance!==null)?s.balance:'';
+    const dv=(s.diuresis!==undefined&&s.diuresis!==null)?s.diuresis:'';
+    return '<div class="bcd-shift-card bcd-shift-card-'+i+'">'
+    +'<div class="bcd-shift-title">Shift '+label+'</div>'
+    +'<div class="bcd-shift-row"><div><label class="kc-l" style="margin-top:0">Balance cairan (mL)</label>'
+    +'<input type="number" class="kc-in" id="bcd-shift-balance-'+i+'" inputmode="decimal" step="1" placeholder="mis. -120" value="'+bv+'" oninput="bcdRenderTotal()"></div>'
+    +'<div><label class="kc-l" style="margin-top:0">Diuresis (mL)</label>'
+    +'<input type="number" class="kc-in" id="bcd-shift-diuresis-'+i+'" inputmode="decimal" step="1" placeholder="mis. 210" value="'+dv+'" oninput="bcdRenderTotal()"></div></div>'
+    +'<div class="bcd-shift-out" id="bcd-shift-out-'+i+'"><span>% dari target shift: -</span><span>Rate: - mL/kg/jam</span></div>'
+    +'<button type="button" class="bcd-helper-toggle" onclick="bcdToggleHelper('+i+')">🧮 Hitung Bantu BC (dari Oral/Infus/Urin/IWL/Muntah)</button>'
+    +'<div class="bcd-helper-panel" id="bcd-helper-'+i+'" style="display:none">'
+      +'<div class="mt2">🥛 Oral (mL)</div>'
+      +'<div class="bcd-preset-row"><button type="button" onclick="bcdAddOral('+i+',240)">+1 Gelas Air (240)</button><button type="button" onclick="bcdAddOral('+i+',400)">+1 Gelas Jus (400)</button><button type="button" onclick="bcdAddOral('+i+',250)">+ASI (250)</button></div>'
+      +'<input type="number" class="kc-in" id="bcd-h-oral-'+i+'" inputmode="decimal" step="1" placeholder="Total oral (mL)" value="0" oninput="bcdCalcHelper('+i+')">'
+      +'<div class="mt2" style="margin-top:10px">💉 Infus</div>'
+      +'<label class="kc-l" style="margin-top:0">Rate (mL/jam), otomatis × 8 jam</label>'
+      +'<input type="number" class="kc-in" id="bcd-h-infusrate-'+i+'" inputmode="decimal" step="0.1" placeholder="mis. 15" oninput="bcdCalcHelper('+i+')">'
+      +'<div class="mt2" style="margin-top:10px">🚽 Urin</div>'
+      +'<div class="bcd-preset-row"><button type="button" onclick="bcdSetUrin('+i+',250)">Perkiraan XL (250 g)</button><button type="button" onclick="bcdSetUrin('+i+',100)">Perkiraan L/M/S (100 g)</button></div>'
+      +'<label class="kc-l">Atau timbang: berat kotor (g)</label>'
+      +'<input type="number" class="kc-in" id="bcd-h-kotor-'+i+'" inputmode="decimal" step="1" placeholder="mis. 145" oninput="bcdCalcHelper('+i+')">'
+      +'<label class="kc-l">Berat popok bersih (g), S=20, M=30, L=40</label>'
+      +'<input type="number" class="kc-in" id="bcd-h-bersih-'+i+'" inputmode="decimal" step="1" placeholder="mis. 30" oninput="bcdCalcHelper('+i+')">'
+      +'<label class="bcd-check"><input type="checkbox" id="bcd-h-pup-'+i+'" onchange="bcdCalcHelper('+i+')"> Ada BAB banyak (−100 g)</label>'
+      +'<label class="kc-l">Atau isi urin langsung (mL)</label>'
+      +'<input type="number" class="kc-in" id="bcd-h-urin-'+i+'" inputmode="decimal" step="1" placeholder="Total urin (mL)" value="0" oninput="bcdCalcHelper('+i+')">'
+      +'<div class="mt2" style="margin-top:10px">💧 IWL (konstanta usia)</div>'
+      +'<div class="bcd-seg" id="bcd-h-iwlkonstanta-'+i+'"><button type="button" data-v="50" onclick="bcdSetIwlSeg('+i+',this)">0–1 bln (50)</button><button type="button" data-v="40" onclick="bcdSetIwlSeg('+i+',this)">1 bln–1 th (40)</button><button type="button" data-v="30" class="active" onclick="bcdSetIwlSeg('+i+',this)">1–5 th (30)</button><button type="button" data-v="20" onclick="bcdSetIwlSeg('+i+',this)">&gt;5 th (20)</button></div>'
+      +'<div class="mt2" style="margin-top:10px">🤮 Muntah (mL)</div>'
+      +'<div class="bcd-preset-row"><button type="button" onclick="bcdAddMuntah('+i+',240)">+1 Gelas Aqua (240)</button></div>'
+      +'<input type="number" class="kc-in" id="bcd-h-muntah-'+i+'" inputmode="decimal" step="1" placeholder="Total muntah (mL)" value="0" oninput="bcdCalcHelper('+i+')">'
+      +'<div class="mt2" style="margin-top:10px">💩 BAB / diare (mL)</div>'
+      +'<div class="bcd-preset-row"><button type="button" onclick="bcdAddBab('+i+',240)">+1 Gelas Aqua (240)</button></div>'
+      +'<input type="number" class="kc-in" id="bcd-h-bab-'+i+'" inputmode="decimal" step="1" placeholder="Total BAB/diare (mL)" value="0" oninput="bcdCalcHelper('+i+')">'
+      +'<div class="bcd-gh">1️⃣ Balance Cairan = Input − Output</div>'
+      +'<div class="mt2">Input</div>'
+      +'<div class="bcd-row"><span class="k">Infus</span><span class="v" id="bcd-h-out-infus-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k">Cairan (oral)</span><span class="v" id="bcd-h-out-oral-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k"><b>Total input</b></span><span class="v" id="bcd-h-out-totalin-'+i+'">0 mL</span></div>'
+      +'<div class="mt2" style="margin-top:10px">Output</div>'
+      +'<div class="bcd-row"><span class="k">IWL</span><span class="v" id="bcd-h-out-iwl-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k">Muntah</span><span class="v" id="bcd-h-out-muntah-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k">Urin</span><span class="v" id="bcd-h-out-urin-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k">BAB</span><span class="v" id="bcd-h-out-bab-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row"><span class="k"><b>Total output</b></span><span class="v" id="bcd-h-out-totalout-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-row" style="font-size:.86rem"><span class="k"><b>BC = Input − Output</b></span><span class="v" id="bcd-h-out-bc-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-gh">2️⃣ Darrow (kebutuhan cairan)</div>'
+      +'<div class="src">Darrow = (100 × 10 kg pertama) + (50 × 10 kg kedua) + (20 × BB sisa)</div>'
+      +'<div class="bcd-row"><span class="k">Hasil Darrow (pasien ini)</span><span class="v" id="bcd-h-out-darrow-'+i+'">0 mL</span></div>'
+      +'<div class="bcd-gh">3️⃣ Persentase BC</div>'
+      +'<div class="src">% = (BC ÷ Darrow) × 100%</div>'
+      +'<div class="bcd-row"><span class="k">Hasil %BC</span><span class="v" id="bcd-h-out-pct-'+i+'">0%</span></div>'
+      +'<div id="bcd-h-furosemide-'+i+'"></div>'
+      +'<div class="bcd-gh">4️⃣ Diuresis</div>'
+      +'<div class="src">D = Urin ÷ BB ÷ 8 jam</div>'
+      +'<div class="bcd-row"><span class="k">Hasil diuresis</span><span class="v" id="bcd-h-out-diuresis-'+i+'">0 mL/kg/jam</span></div>'
+      +'<button type="button" class="btn btn-p btn-full" style="margin-top:14px" onclick="bcdApplyHelper('+i+')">✅ Isi ke Balance Shift Ini</button>'
+    +'</div></div>';
+  }).join('');
+  bcdRenderTotal();
+}
+function bcdToggleHelper(i){
+  const panel=document.getElementById('bcd-helper-'+i);
+  panel.style.display=panel.style.display==='none'?'block':'none';
+  if(panel.style.display==='block') bcdCalcHelper(i);
+}
+function bcdAddTo(id,i,val){
+  const el=document.getElementById(id+i);
+  el.value=(parseFloat(el.value)||0)+val;
+  bcdCalcHelper(i);
+}
+function bcdAddOral(i,val){ bcdAddTo('bcd-h-oral-',i,val); }
+function bcdAddMuntah(i,val){ bcdAddTo('bcd-h-muntah-',i,val); }
+function bcdAddBab(i,val){ bcdAddTo('bcd-h-bab-',i,val); }
+function bcdSetUrin(i,val){
+  document.getElementById('bcd-h-urin-'+i).value=val;
+  document.getElementById('bcd-h-kotor-'+i).value='';
+  document.getElementById('bcd-h-bersih-'+i).value='';
+  bcdCalcHelper(i);
+}
+function bcdSetIwlSeg(i,el){
+  document.getElementById('bcd-h-iwlkonstanta-'+i).querySelectorAll('button').forEach(function(b){b.classList.remove('active');});
+  el.classList.add('active');
+  bcdCalcHelper(i);
+}
+function bcdCalcHelper(i){
+  const p=bcdGetCurrentPatient(); if(!p) return;
+  const n=function(id){return parseFloat(document.getElementById(id+i).value);};
+  const oral=n('bcd-h-oral-')||0;
+  const infus8=(n('bcd-h-infusrate-')||0)*8;
+  const kotor=n('bcd-h-kotor-'), bersih=n('bcd-h-bersih-');
+  const pup=document.getElementById('bcd-h-pup-'+i).checked;
+  let urin=n('bcd-h-urin-')||0;
+  if(!isNaN(kotor)&&!isNaN(bersih)){
+    urin=kotor-bersih-(pup?100:0);
+    document.getElementById('bcd-h-urin-'+i).value=urin.toFixed(0);
+  }
+  const konstanta=parseFloat(document.getElementById('bcd-h-iwlkonstanta-'+i).querySelector('button.active').dataset.v);
+  const iwl=(p.bb*konstanta)/3;
+  const muntah=n('bcd-h-muntah-')||0, bab=n('bcd-h-bab-')||0;
+  const totalInput=oral+infus8;
+  const totalOutput=iwl+muntah+urin+bab;
+  const bc=totalInput-totalOutput;
+  const set=function(id,t){document.getElementById('bcd-h-out-'+id+'-'+i).textContent=t;};
+  set('infus',infus8.toFixed(0)+' mL'); set('oral',oral.toFixed(0)+' mL'); set('totalin',totalInput.toFixed(0)+' mL');
+  set('iwl',iwl.toFixed(1)+' mL'); set('muntah',muntah.toFixed(0)+' mL'); set('urin',urin.toFixed(0)+' mL'); set('bab',bab.toFixed(0)+' mL');
+  set('totalout',totalOutput.toFixed(1)+' mL'); set('bc',bc.toFixed(1)+' mL');
+  set('darrow',p.kebutuhan.toFixed(0)+' mL');
+  const pct=(bc/p.kebutuhan)*100;
+  set('pct',pct.toFixed(1)+'%');
+  const fb=document.getElementById('bcd-h-furosemide-'+i);
+  if(Math.abs(pct)>=20){
+    const dosis=(0.05*p.bb).toFixed(2);
+    fb.innerHTML='<div class="bcd-warn">🚨 %BC '+pct.toFixed(1)+'% (≥20%, '+(pct>0?'hipervolemia':'defisit berat')+') — <b>LAPOR!</b> Ingatkan pertimbangan Furosemide '+dosis+' mg (0,05 mg/kg) sesuai instruksi DPJP.</div>';
+  } else { fb.innerHTML=''; }
+  set('diuresis',(urin/(p.bb*8)).toFixed(2)+' mL/kg/jam');
+  return {bc:bc,urin:urin};
+}
+function bcdApplyHelper(i){
+  const res=bcdCalcHelper(i);
+  document.getElementById('bcd-shift-balance-'+i).value=res.bc.toFixed(1);
+  document.getElementById('bcd-shift-diuresis-'+i).value=res.urin.toFixed(0);
+  bcdRenderTotal();
+}
+
+function bcdRenderTotal(){
+  const p=bcdGetCurrentPatient(); if(!p) return;
+  const targetPerShift=p.kebutuhan/3;
+  let totalBalance=0,totalDiuresis=0,filledCount=0;
+  for(let i=0;i<3;i++){
+    const bal=parseFloat(document.getElementById('bcd-shift-balance-'+i).value);
+    const diu=parseFloat(document.getElementById('bcd-shift-diuresis-'+i).value);
+    let pctText='-',rateText='-';
+    if(!isNaN(bal)){ pctText=((bal/targetPerShift)*100).toFixed(1)+'%'; totalBalance+=bal; filledCount++; }
+    if(!isNaN(diu)){ rateText=(diu/(p.bb*8)).toFixed(2)+' mL/kg/jam'; totalDiuresis+=diu; }
+    document.getElementById('bcd-shift-out-'+i).innerHTML='<span>% dari target shift: '+pctText+'</span><span>Rate: '+rateText+'</span>';
+  }
+  const totalPct=(totalBalance/p.kebutuhan)*100;
+  const avgRate=totalDiuresis/(p.bb*24);
+  let tag='normal',label='Normal';
+  if(avgRate<1){ tag='danger'; label='Oliguria (<1 mL/kg/jam)'; }
+  else if(avgRate>4){ tag='caution'; label='Poliuria (>4 mL/kg/jam)'; }
+  document.getElementById('bcd-total-content').innerHTML=
+    '<div class="bcd-row"><span class="k">Total balance 24 jam</span><span class="v">'+totalBalance.toFixed(1)+' mL ('+totalPct.toFixed(1)+'%)</span></div>'
+    +'<div class="bcd-row"><span class="k">Total diuresis 24 jam</span><span class="v">'+totalDiuresis.toFixed(1)+' mL</span></div>'
+    +'<div class="bcd-row"><span class="k">Rata-rata diuresis</span><span class="v">'+avgRate.toFixed(2)+' mL/kg/jam</span></div>'
+    +'<div style="margin-top:8px"><span class="bcd-tag '+tag+'">'+label+'</span></div>'
+    +'<div class="src" style="margin-top:8px">Shift terisi: '+filledCount+'/3</div>';
+}
+function bcdSaveDay(){
+  const p=bcdGetCurrentPatient(); if(!p) return;
+  const date=bcdVal('bcd-tanggal')||bcdTodayStr();
+  const shifts=[];
+  for(let i=0;i<3;i++){
+    const bal=bcdVal('bcd-shift-balance-'+i), diu=bcdVal('bcd-shift-diuresis-'+i);
+    shifts.push({balance:bal===''?null:parseFloat(bal),diuresis:diu===''?null:parseFloat(diu)});
+  }
+  const list=bcdGetPatients();
+  const idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  list[idx].days[date]={shifts:shifts};
+  if(!bcdSavePatients(list)) return;
+  const msg=document.getElementById('bcd-save-msg');
+  msg.textContent='✅ Data tanggal '+date+' berhasil disimpan.'; msg.style.color='#0D9488';
+  setTimeout(function(){ msg.textContent=''; },3000);
+}
+function bcdRenderRiwayatHari(){
+  const wrap=document.getElementById('bcd-riwayat-hari-list');
+  const p=bcdGetCurrentPatient();
+  if(!p){ wrap.innerHTML=''; return; }
+  const dates=Object.keys(p.days).sort().reverse();
+  if(!dates.length){ wrap.innerHTML='<div class="bcd-empty">Belum ada riwayat hari tersimpan.</div>'; return; }
+  wrap.innerHTML=dates.map(function(date){
+    let totalBalance=0,totalDiuresis=0,filled=0;
+    p.days[date].shifts.forEach(function(s){
+      if(s.balance!==null&&s.balance!==undefined){ totalBalance+=s.balance; filled++; }
+      if(s.diuresis!==null&&s.diuresis!==undefined){ totalDiuresis+=s.diuresis; }
+    });
+    const totalPct=(totalBalance/p.kebutuhan)*100;
+    const avgRate=totalDiuresis/(p.bb*24);
+    return '<div class="bcd-hday" onclick="bcdViewHistDay(\''+date+'\')"><b>'+date+'</b><div>Balance: '+totalBalance.toFixed(0)+' mL ('+totalPct.toFixed(1)+'%) · Diuresis rata-rata: '+avgRate.toFixed(2)+' mL/kg/jam · '+filled+'/3 shift</div></div>';
+  }).join('');
+}
+function bcdViewHistDay(date){
+  document.getElementById('bcd-tanggal').value=date;
+  bcdLoadDay();
+  bcdResetSub();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+bcdRenderPatientList();
+
+
+/* ====== BCD PICU: bed (10 bed), ventilator/ETT, dan TTV ====== */
+function bcdBeds(){ var a=[],i; for(i=0;i<BCD_BED_COUNT;i++) a.push(BCD_BED_START+i); return a; }
+function bcdFmt(n){ return String(n).replace('.',','); }
+function bcdPad(n){ return ('0'+n).slice(-2); }
+function bcdNowHM(){ var d=new Date(); return bcdPad(d.getHours())+':'+bcdPad(d.getMinutes()); }
+function bcdLocalDate(){ var d=new Date(); return d.getFullYear()+'-'+bcdPad(d.getMonth()+1)+'-'+bcdPad(d.getDate()); }
+
+/* usia bebas ("3 tahun", "8 bulan", "1 th 6 bln", "10 hari", "5") -> tahun */
+function bcdParseUsia(t){
+  t=String(t||'').toLowerCase().replace(/,/g,'.').trim();
+  if(!t) return NaN;
+  if(/^\d+(\.\d+)?$/.test(t)) return parseFloat(t);
+  var re=/(\d+(?:\.\d+)?)\s*(tahun|thn|th|bulan|bln|minggu|mgg|hari|hr)\b/g, m, y=0, ok=false;
+  while((m=re.exec(t))){
+    var v=parseFloat(m[1]), u=m[2]; ok=true;
+    if(u==='tahun'||u==='thn'||u==='th') y+=v;
+    else if(u==='bulan'||u==='bln') y+=v/12;
+    else if(u==='minggu'||u==='mgg') y+=v*7/365;
+    else y+=v/365;
+  }
+  return ok?y:NaN;
+}
+/* ukuran ETT = usia/4 + 3,5 (cuff) atau + 4 (tanpa cuff); kedalaman = usia/2 + 12. Hanya untuk usia >= 1 tahun */
+function bcdEttSuggest(ageY,cuff){
+  if(!(ageY>=1)) return null;
+  return {size:Math.round((ageY/4+(cuff?3.5:4))*2)/2, depth:Math.round((ageY/2+12)*2)/2};
+}
+
+/* ---- bed ---- */
+function bcdOccupancy(exceptId){
+  var o={};
+  bcdGetPatients().forEach(function(p){ if(!p.pulang&&p.bed&&p.id!==exceptId) o[p.bed]=p; });
+  return o;
+}
+function bcdFirstFree(exceptId){
+  var occ=bcdOccupancy(exceptId), b=bcdBeds(), i;
+  for(i=0;i<b.length;i++) if(!occ[b[i]]) return b[i];
+  return null;
+}
+function bcdFillBedSelect(selId,selected,exceptId){
+  var occ=bcdOccupancy(exceptId), h='';
+  bcdBeds().forEach(function(b){
+    var p=occ[b];
+    h+='<option value="'+b+'"'+(p?' disabled':'')+(b===selected?' selected':'')+'>Bed '+b+(p?' (terisi: '+bcdEsc(p.nama)+')':'')+'</option>';
+  });
+  document.getElementById(selId).innerHTML=h;
+}
+
+/* ---- ventilator / ETT (dipakai form tambah dan form ubah) ---- */
+function bcdVSet(pfx,on){
+  var c=document.getElementById(pfx+'vseg'); c.dataset.v=on?'1':'0';
+  Array.prototype.forEach.call(c.querySelectorAll('button'),function(b){ b.classList.toggle('active',b.dataset.v===c.dataset.v); });
+}
+function bcdVOn(pfx){ return document.getElementById(pfx+'vseg').dataset.v==='1'; }
+function bcdAgeFor(pfx){
+  if(pfx==='bcd-new-') return bcdParseUsia(bcdVal('bcd-new-usia'));
+  var p=bcdGetCurrentPatient(); return p?bcdParseUsia(p.usia):NaN;
+}
+function bcdEttAuto(pfx,force){
+  var on=bcdVOn(pfx);
+  document.getElementById(pfx+'ettbox').style.display=on?'block':'none';
+  if(!on) return;
+  var age=bcdAgeFor(pfx), cuff=bcdVal(pfx+'cuff')==='1', s=bcdEttSuggest(age,cuff);
+  var no=document.getElementById(pfx+'ettno'), dp=document.getElementById(pfx+'depth'), hint=document.getElementById(pfx+'hint');
+  if(s){
+    hint.textContent='Saran rumus (usia '+bcdFmt(Math.round(age*10)/10)+' th): ETT '+bcdFmt(s.size)+', kedalaman '+bcdFmt(s.depth)+' cm. Boleh diubah sesuai kondisi pasien.';
+    if(force||!no.dataset.manual) no.value=bcdFmt(s.size);
+    if(force||!dp.dataset.manual) dp.value=bcdFmt(s.depth);
+    if(force){ delete no.dataset.manual; delete dp.dataset.manual; }
+  } else if(isNaN(age)){
+    hint.textContent='Isi usia (mis. 3 tahun) agar saran ukuran dan kedalaman ETT muncul.';
+  } else {
+    hint.textContent='Rumus usia/4 dan usia/2 berlaku untuk usia 1 tahun ke atas. Untuk bayi, isi manual atau tanya senior.';
+  }
+}
+function bcdEttReset(pfx){
+  bcdVSet(pfx,false);
+  document.getElementById(pfx+'cuff').value='1';
+  ['ettno','depth'].forEach(function(k){ var e=document.getElementById(pfx+k); e.value=''; delete e.dataset.manual; });
+  document.getElementById(pfx+'ettbox').style.display='none';
+  var vi=document.getElementById(pfx+'vinit'); if(vi) vi.checked=true;
+}
+function bcdReadVent(pfx){
+  var on=bcdVOn(pfx), no=kn(bcdVal(pfx+'ettno')), dp=kn(bcdVal(pfx+'depth'));
+  return {vent:on, ettNo:(on&&isFinite(no))?no:null, ettDepth:(on&&isFinite(dp))?dp:null, ettCuff:bcdVal(pfx+'cuff')==='1'};
+}
+
+/* ---- tambah pasien ---- */
+function bcdShowAddPatient(bed){
+  var free=bcdFirstFree();
+  if(free===null){ alert('Semua '+BCD_BED_COUNT+' bed PICU terisi. Tandai pasien pulang atau pindah dulu.'); return; }
+  document.getElementById('bcd-addpatient-card').style.display='block';
+  bcdFillBedSelect('bcd-new-bed',(typeof bed==='number'&&!bcdOccupancy()[bed])?bed:free);
+  bcdEttReset('bcd-new-');
+  document.getElementById('bcd-addpatient-card').scrollIntoView({block:'nearest'});
+}
+function bcdCancelAddPatient(){
+  document.getElementById('bcd-addpatient-card').style.display='none';
+  ['bcd-new-nama','bcd-new-usia','bcd-new-bb','bcd-new-kebutuhan','bcd-new-rm'].forEach(function(id){
+    var el=document.getElementById(id); if(el) el.value='';
+  });
+  bcdEttReset('bcd-new-');
+}
+function bcdAddPatient(){
+  var nama=bcdVal('bcd-new-nama').trim(), usia=bcdVal('bcd-new-usia').trim();
+  var bb=parseFloat(bcdVal('bcd-new-bb')), kebutuhan=parseFloat(bcdVal('bcd-new-kebutuhan')), rm=bcdVal('bcd-new-rm').trim();
+  if(!nama||!bb||!kebutuhan){ alert('Isi minimal Nama, Berat Badan, dan Kebutuhan Cairan.'); return; }
+  var bed=parseInt(bcdVal('bcd-new-bed'),10);
+  if(!bed||bcdOccupancy()[bed]){ alert('Pilih bed yang masih kosong.'); return; }
+  var v=bcdReadVent('bcd-new-');
+  var vs=null;
+  if(v.vent&&document.getElementById('bcd-new-vinit').checked){ vs=bcdVentInitial(bcdParseUsia(usia)); vs.date=bcdLocalDate(); vs.time=bcdNowHM(); }
+  var list=bcdGetPatients();
+  list.unshift({id:Date.now(),nama:nama,usia:usia||'-',bb:bb,kebutuhan:kebutuhan,rm:rm||'-',pulang:false,days:{},
+    bed:bed,vent:v.vent,ettNo:v.ettNo,ettDepth:v.ettDepth,ettCuff:v.ettCuff,ttv:[],vset:vs,vlog:vs?[JSON.parse(JSON.stringify(vs))]:[]});
+  if(!bcdSavePatients(list)) return;
+  bcdCancelAddPatient();
+  bcdRenderPatientList();
+}
+
+/* ---- daftar pasien + peta bed ---- */
+function bcdLastTtv(p){
+  var t=(p.ttv||[]).slice().sort(function(a,b){ return ((a.date||'')+(a.time||''))<((b.date||'')+(b.time||''))?1:-1; });
+  return t[0]||null;
+}
+function bcdTtvLine(t){
+  var parts=[];
+  if(t.sis!=null&&t.dia!=null) parts.push('TD '+bcdFmt(t.sis)+'/'+bcdFmt(t.dia));
+  else if(t.sis!=null) parts.push('TDS '+bcdFmt(t.sis));
+  if(t.suhu!=null) parts.push('S '+bcdFmt(t.suhu));
+  if(t.nadi!=null) parts.push('N '+bcdFmt(t.nadi));
+  if(t.rr!=null) parts.push('RR '+bcdFmt(t.rr));
+  if(t.spo2!=null) parts.push('SpO₂ '+bcdFmt(t.spo2));
+  return parts.join(' · ');
+}
+
+function bcdRenderBedMap(){
+  var occ=bcdOccupancy(), n=0, h='';
+  bcdBeds().forEach(function(b){
+    var p=occ[b];
+    if(p){
+      n++;
+      h+='<div class="bcd-bed occ" onclick="bcdOpenPatient('+p.id+')"><div class="bn">'+b+'</div><div class="bp">'+bcdEsc(p.nama)+'</div>'+(p.vent?'<div class="bv">🫁</div>':'')+'</div>';
+    } else {
+      h+='<div class="bcd-bed" onclick="bcdShowAddPatient('+b+')"><div class="bn">'+b+'</div><div class="bp">kosong</div></div>';
+    }
+  });
+  document.getElementById('bcd-bedmap').innerHTML='<div class="mt2">🛏️ Peta bed PICU: terisi '+n+'/'+BCD_BED_COUNT+'</div><div class="bcd-bedmap">'+h+'</div>';
+}
+function bcdRenderPatientList(){
+  bcdRenderBedMap();
+  var wrap=document.getElementById('bcd-patient-list'), list=bcdGetPatients();
+  if(!list.length){ wrap.innerHTML='<div class="bcd-empty">Belum ada pasien.<br>Ketuk bed kosong atau tekan "➕ Tambah Pasien Baru" untuk mulai.</div>'; return; }
+  var byBed=function(a,b){ return (a.bed||9999)-(b.bed||9999); };
+  var aktif=list.filter(function(p){return !p.pulang;}).sort(byBed);
+  var pulang=list.filter(function(p){return p.pulang;});
+  var renderCard=function(p){
+    var todayData=p.days[bcdTodayStr()], todayInfo='Belum ada data BCD hari ini';
+    if(todayData){
+      var filled=todayData.shifts.filter(function(s){return s&&s.balance!==null&&s.balance!==undefined&&s.balance!=='';}).length;
+      todayInfo=filled+'/3 shift BCD terisi hari ini';
+    }
+    var lt=bcdLastTtv(p);
+    return '<div class="bcd-pcard" style="'+(p.pulang?'opacity:.6':'')+'" onclick="bcdOpenPatient('+p.id+')">'
+      +'<div><div class="bcd-pname">'+(p.pulang?'🏠 ':'')+(p.bed?'<span class="bcd-bedbadge">Bed '+p.bed+'</span>':'')+bcdEsc(p.nama)+'</div>'
+      +'<div class="bcd-pmeta">'+bcdEsc(p.usia)+' · BB '+p.bb+' kg · Target '+p.kebutuhan.toFixed(0)+' mL/24j</div>'
+      +'<div class="bcd-pmeta">'+bcdVentText(p)+'</div>'
+      +(lt?'<div class="bcd-pmeta">TTV '+((lt.date&&lt.date!==bcdLocalDate())?lt.date.slice(5)+' ':'')+(lt.time||'')+': '+bcdTtvLine(lt)+'</div>':'')
+      +'<div class="bcd-pmeta">'+(p.rm!=='-'?'No.RM '+bcdEsc(p.rm)+' · ':'')+(p.pulang?'Sudah pulang':todayInfo)+'</div></div>'
+      +'<button class="bcd-pdel" onclick="bcdDeletePatient('+p.id+',event)">🗑</button></div>';
+  };
+  var html='';
+  if(aktif.length) html+='<div class="mt2">🛏️ Masih dirawat ('+aktif.length+')</div>'+aktif.map(renderCard).join('');
+  if(pulang.length) html+='<div class="mt2" style="margin-top:14px">🏠 Sudah pulang ('+pulang.length+')</div>'+pulang.map(renderCard).join('');
+  wrap.innerHTML=html;
+}
+
+/* ---- detail pasien ---- */
+function bcdResetSub(){
+  document.querySelectorAll('#bcd-view-detail .bcd-st').forEach(function(b){b.classList.remove('active');});
+  document.querySelector('#bcd-view-detail .bcd-st[data-s="input"]').classList.add('active');
+  document.querySelectorAll('#bcd-view-detail .bcd-sp').forEach(function(x){x.classList.remove('active');});
+  document.getElementById('bcd-sub-input').classList.add('active');
+  document.getElementById('bcd-edit-card').style.display='none';
+}
+function bcdOpenPatient(id){
+  bcdCurrentPatientId=id;
+  var p=bcdGetPatients().find(function(x){return x.id===id;});
+  if(!p) return;
+  document.getElementById('bcd-view-list').classList.add('hidden');
+  document.getElementById('bcd-view-detail').classList.remove('hidden');
+  var row=function(k,v){return '<div class="bcd-row"><span class="k">'+k+'</span><span class="v">'+v+'</span></div>';};
+  document.getElementById('bcd-detail-header').innerHTML=
+    row('Nama',bcdEsc(p.nama))+row('Bed',p.bed?('Bed '+p.bed):'-')+row('Usia',bcdEsc(p.usia))+row('Berat badan',p.bb+' kg')
+    +row('Kebutuhan cairan/24 jam',p.kebutuhan.toFixed(0)+' mL')
+    +row('Ventilator',p.vent?'🫁 Ya':'Tidak')
+    +(p.vent?row('ETT nomor',p.ettNo!=null?bcdFmt(p.ettNo)+(p.ettCuff===false?' (tanpa cuff)':' (cuff)'):'-')+row('Kedalaman ETT',p.ettDepth!=null?bcdFmt(p.ettDepth)+' cm':'-'):'')
+    +(p.rm!=='-'?row('No. RM',bcdEsc(p.rm)):'')
+    +row('Status',p.pulang?'🏠 Sudah pulang':'🛏️ Masih dirawat');
+  bcdVentRender(p);
+  var t=document.getElementById('bcd-toggle-pulang-btn');
+  t.textContent=p.pulang?'🔄 Aktifkan kembali (masih dirawat)':'🏠 Tandai pasien sudah pulang';
+  bcdResetSub();
+  document.getElementById('bcd-tanggal').value=bcdTodayStr();
+  document.getElementById('bcd-ttv-date').value=bcdLocalDate();
+  document.getElementById('bcd-ttv-time').value=bcdNowHM();
+  bcdLoadDay();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function bcdSubTab(id,el){
+  document.querySelectorAll('#bcd-view-detail .bcd-st').forEach(function(b){b.classList.remove('active');});
+  el.classList.add('active');
+  document.querySelectorAll('#bcd-view-detail .bcd-sp').forEach(function(x){x.classList.remove('active');});
+  document.getElementById('bcd-sub-'+id).classList.add('active');
+  if(id==='riwayat') bcdRenderRiwayatHari();
+  if(id==='ttv') bcdTtvRender();
+}
+function bcdTogglePulang(){
+  var list=bcdGetPatients(), idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  var p=list[idx];
+  p.pulang=!p.pulang;
+  if(!p.pulang&&p.bed&&bcdOccupancy(p.id)[p.bed]){
+    alert('Bed '+p.bed+' sudah dipakai pasien lain. Pilih bed baru lewat "Ubah bed / ventilator".');
+    p.bed=null;
+  }
+  bcdSavePatients(list);
+  bcdOpenPatient(bcdCurrentPatientId);
+}
+
+/* ---- ubah bed / ventilator ---- */
+function bcdEditToggle(){
+  var card=document.getElementById('bcd-edit-card');
+  if(card.style.display==='block'){ card.style.display='none'; return; }
+  var p=bcdGetCurrentPatient(); if(!p) return;
+  bcdFillBedSelect('bcd-ed-bed',p.bed||bcdFirstFree(p.id)||undefined,p.id);
+  bcdVSet('bcd-ed-',!!p.vent);
+  document.getElementById('bcd-ed-cuff').value=(p.ettCuff===false)?'0':'1';
+  var no=document.getElementById('bcd-ed-ettno'), dp=document.getElementById('bcd-ed-depth');
+  no.value=p.ettNo!=null?bcdFmt(p.ettNo):''; dp.value=p.ettDepth!=null?bcdFmt(p.ettDepth):'';
+  if(p.ettNo!=null) no.dataset.manual='1'; else delete no.dataset.manual;
+  if(p.ettDepth!=null) dp.dataset.manual='1'; else delete dp.dataset.manual;
+  card.style.display='block';
+  bcdEttAuto('bcd-ed-');
+}
+function bcdEditSave(){
+  var list=bcdGetPatients(), idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  var p=list[idx];
+  var bed=parseInt(bcdVal('bcd-ed-bed'),10);
+  if(!bed||bcdOccupancy(p.id)[bed]){ alert('Pilih bed yang masih kosong.'); return; }
+  var v=bcdReadVent('bcd-ed-');
+  if(p.vent&&!v.vent&&p.vset){
+    if(!confirm('Ventilator dinonaktifkan. Setting ventilator pasien ini akan dihapus. Lanjut?')) return;
+    p.vset=null; p.vlog=[];
+  }
+  p.bed=bed; p.vent=v.vent; p.ettNo=v.ettNo; p.ettDepth=v.ettDepth; p.ettCuff=v.ettCuff;
+  if(!bcdSavePatients(list)) return;
+  bcdOpenPatient(p.id);
+}
+
+/* ---- TTV ---- */
+function bcdTtvRef(ageY){
+  if(isNaN(ageY)) return null;
+  if(ageY<1/12) return {hr:[90,205],rr:[30,53],sbp:60};
+  if(ageY<1) return {hr:[90,190],rr:[30,53],sbp:70};
+  if(ageY<3) return {hr:[80,140],rr:[22,37],sbp:70+2*Math.floor(ageY)};
+  if(ageY<6) return {hr:[65,120],rr:[20,28],sbp:70+2*Math.floor(ageY)};
+  if(ageY<10) return {hr:[58,118],rr:[18,25],sbp:70+2*Math.floor(ageY)};
+  if(ageY<12) return {hr:[58,118],rr:[18,25],sbp:90};
+  return {hr:[50,100],rr:[12,20],sbp:90};
+}
+function bcdFlag(v,lo,hi){
+  if(v===null||v===undefined||isNaN(v)) return '';
+  if(v<lo) return ' tf-lo';
+  if(v>hi) return ' tf-hi';
+  return '';
+}
+function bcdTtvNow(){ document.getElementById('bcd-ttv-time').value=bcdNowHM(); }
+function bcdTtvRender(){
+  var p=bcdGetCurrentPatient(); if(!p) return;
+  var date=bcdVal('bcd-ttv-date')||bcdLocalDate();
+  var ref=bcdTtvRef(bcdParseUsia(p.usia));
+  document.getElementById('bcd-ttv-ref').textContent=ref
+    ?('Rentang referensi usia ini (PALS 2015, Bab 8): nadi '+ref.hr[0]+'–'+ref.hr[1]+', RR '+ref.rr[0]+'–'+ref.rr[1]+', hipotensi sistolik <'+ref.sbp+'. Merah di atas rentang, biru di bawah. Pasien sedasi atau berventilator bisa berbeda, nilai target ikut instruksi DPJP.')
+    :'Isi usia pasien dengan format "3 tahun" atau "8 bulan" agar rentang referensi dan penanda warna muncul.';
+  var rows=(p.ttv||[]).filter(function(t){return t.date===date;}).sort(function(a,b){return a.time<b.time?1:-1;});
+  var out=document.getElementById('bcd-ttv-list');
+  if(!rows.length){ out.innerHTML='<div class="bcd-empty">Belum ada TTV pada tanggal ini.</div>'; return; }
+  var cell=function(v,cls){ return '<td'+(cls?' class="'+cls.trim()+'"':'')+'>'+(v==null?'–':bcdFmt(v))+'</td>'; };
+  var h='<div style="overflow-x:auto"><table class="t"><tr><th>Jam</th><th>TD</th><th>Suhu</th><th>Nadi</th><th>RR</th><th>SpO₂</th><th></th></tr>';
+  rows.forEach(function(t){
+    h+='<tr><td><strong>'+bcdEsc(t.time)+'</strong></td>'
+      +'<td'+((ref&&t.sis!=null&&t.sis<ref.sbp)?' class="tf-lo"':'')+'>'+((t.sis==null&&t.dia==null)?'–':(t.sis==null?'?':bcdFmt(t.sis))+'/'+(t.dia==null?'?':bcdFmt(t.dia)))+'</td>'
+      +cell(t.suhu,t.suhu==null?'':(t.suhu>=38?'tf-hi':(t.suhu<36?'tf-lo':'')))
+      +cell(t.nadi,ref?bcdFlag(t.nadi,ref.hr[0],ref.hr[1]):'')
+      +cell(t.rr,ref?bcdFlag(t.rr,ref.rr[0],ref.rr[1]):'')
+      +cell(t.spo2,t.spo2==null?'':(t.spo2<92?'tf-lo':''))
+      +'<td><button class="bcd-pdel" style="width:26px;height:26px" onclick="bcdTtvDel('+t.id+')">🗑</button></td></tr>';
+  });
+  out.innerHTML=h+'</table></div>';
+}
+function bcdTtvAdd(){
+  var list=bcdGetPatients(), idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  var g=function(id){ var x=kn(bcdVal(id)); return isFinite(x)?x:null; };
+  var t={id:Date.now(),date:bcdVal('bcd-ttv-date')||bcdLocalDate(),time:bcdVal('bcd-ttv-time')||bcdNowHM(),
+    sis:g('bcd-ttv-sis'),dia:g('bcd-ttv-dia'),suhu:g('bcd-ttv-suhu'),nadi:g('bcd-ttv-nadi'),rr:g('bcd-ttv-rr'),spo2:g('bcd-ttv-spo2')};
+  if(['sis','dia','suhu','nadi','rr','spo2'].every(function(k){return t[k]===null;})){ alert('Isi minimal satu nilai TTV.'); return; }
+  var lim={sis:[30,250,'sistolik'],dia:[10,200,'diastolik'],suhu:[30,43,'suhu'],nadi:[20,300,'nadi'],rr:[5,120,'RR'],spo2:[0,100,'SpO₂']}, odd=[];
+  Object.keys(lim).forEach(function(k){ if(t[k]!==null&&(t[k]<lim[k][0]||t[k]>lim[k][1])) odd.push(lim[k][2]+' '+bcdFmt(t[k])); });
+  if(t.sis!==null&&t.dia!==null&&t.sis<=t.dia) odd.push('sistolik tidak lebih besar dari diastolik');
+  if(odd.length&&!confirm('Nilai tidak lazim: '+odd.join(', ')+'. Tetap simpan?')) return;
+  var p=list[idx]; if(!p.ttv) p.ttv=[];
+  p.ttv.push(t);
+  if(!bcdSavePatients(list)) return;
+  ['sis','dia','suhu','nadi','rr','spo2'].forEach(function(k){ document.getElementById('bcd-ttv-'+k).value=''; });
+  bcdTtvNow();
+  bcdTtvRender();
+  document.getElementById('bcd-ttv-sis').focus();
+}
+function bcdTtvDel(id){
+  if(!confirm('Hapus catatan TTV ini?')) return;
+  var list=bcdGetPatients(), idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  list[idx].ttv=(list[idx].ttv||[]).filter(function(t){return t.id!==id;});
+  bcdSavePatients(list);
+  bcdTtvRender();
+}
+
+/* ---- pemasangan event ---- */
+(function(){
+  ['bcd-new-','bcd-ed-'].forEach(function(pfx){
+    document.getElementById(pfx+'vseg').addEventListener('click',function(e){
+      var b=e.target.closest('button'); if(!b) return;
+      bcdVSet(pfx,b.dataset.v==='1'); bcdEttAuto(pfx);
+    });
+    document.getElementById(pfx+'cuff').addEventListener('change',function(){ bcdEttAuto(pfx); });
+    ['ettno','depth'].forEach(function(k){
+      document.getElementById(pfx+k).addEventListener('input',function(e){ e.target.dataset.manual='1'; });
+    });
+  });
+  document.getElementById('bcd-new-usia').addEventListener('input',function(){ bcdEttAuto('bcd-new-'); });
+  bcdRenderPatientList();
+})();
+
+
+/* ====== Kalkulator obat: pasien (nama, bed, BB) dari BCD PICU + label setting obat ====== */
+var kcBed=null;
+function kcFillPatients(){
+  const sel=document.getElementById('kcPas'), cur=sel.value;
+  let list=[];
+  try{ list=bcdGetPatients().filter(function(p){return !p.pulang;}).sort(function(a,b){return (a.bed||9999)-(b.bed||9999);}); }catch(e){}
+  sel.innerHTML='<option value="">Isi manual</option>'+list.map(function(p){
+    return '<option value="'+p.id+'">'+(p.bed?'Bed '+p.bed+' · ':'')+bcdEsc(p.nama)+' · '+p.bb+' kg</option>';
+  }).join('');
+  if(cur&&list.some(function(p){return String(p.id)===cur;})) sel.value=cur;
+}
+function kcPatPick(){
+  const id=document.getElementById('kcPas').value;
+  if(!id){ kcBed=null; kcCalc(); return; }
+  const p=bcdGetPatients().find(function(x){return String(x.id)===id;});
+  if(!p) return;
+  document.getElementById('kcNama').value=p.nama;
+  document.getElementById('kcBB').value=String(p.bb).replace('.',',');
+  kcBed=p.bed||null;
+  kcCalc();
+}
+function kcUsePatient(id){
+  goSub('obat','ob-kalk');
+  kcFillPatients();
+  document.getElementById('kcPas').value=String(id);
+  kcPatPick();
+}
+(function(){
+  const sel=document.getElementById('kcPas');
+  ['focus','pointerdown'].forEach(function(ev){ sel.addEventListener(ev,kcFillPatients); });
+  sel.addEventListener('change',kcPatPick);
+  document.getElementById('kcNama').addEventListener('input',function(){ kcBed=null; kcCalc(); });
+  kcFillPatients();
+  kcCalc();
+})();
+
+
+/* ====== Pintasan Pasien PICU (menu atas, kartu Beranda, tautan #pasien) ====== */
+function openPasien(){
+  const nb=document.getElementById('nbPasien');
+  showSec('bcd',nb);
+  const chip=[...document.querySelectorAll('#bcd .jg-tabs .chip')].find(function(c){return (c.getAttribute('onclick')||'').includes("'bcd-pasien'");});
+  if(chip) showSub('bcd-pasien',chip);
+  if(nb) nb.scrollIntoView({inline:'center',block:'nearest'});
+}
+function pasienHomeOpen(id){ openPasien(); bcdOpenPatient(id); }
+function pasienHomeAdd(bed){ openPasien(); bcdShowAddPatient(bed); }
+function pasienHomeRender(){
+  const box=document.getElementById('pasienHome'); if(!box) return;
+  const occ=bcdOccupancy(), aktif=bcdGetPatients().filter(function(p){return !p.pulang;});
+  const today=bcdLocalDate();
+  let n=0, cells='';
+  bcdBeds().forEach(function(b){
+    const p=occ[b];
+    if(p){
+      n++;
+      cells+='<div class="hb-bed occ" onclick="pasienHomeOpen('+p.id+')"><div class="bn">'+b+'</div><div class="bp">'+bcdEsc(p.nama)+'</div>'+(p.vent?'<div class="bv">🫁</div>':'')+'</div>';
+    } else {
+      cells+='<div class="hb-bed" onclick="pasienHomeAdd('+b+')"><div class="bn">'+b+'</div><div class="bp">kosong</div></div>';
+    }
+  });
+  const noBed=aktif.filter(function(p){return !p.bed;}).length;
+  const vent=aktif.filter(function(p){return p.vent;}).length;
+  const belumTtv=aktif.filter(function(p){return !(p.ttv||[]).some(function(t){return t.date===today;});}).length;
+  let sum='Terisi <strong>'+n+'/'+BCD_BED_COUNT+'</strong>'+(noBed?' (+'+noBed+' tanpa bed)':'')+' · <strong>'+vent+'</strong> pakai ventilator';
+  if(aktif.length) sum+=' · belum ada TTV hari ini: <strong>'+belumTtv+'</strong>';
+  box.innerHTML='<div class="src" style="margin:0 0 6px">'+sum+'</div><div class="hb-grid">'+cells+'</div>'
+    +(aktif.length?'':'<div class="src" style="margin-top:6px">Belum ada pasien. Ketuk bed kosong untuk menambah.</div>');
+}
+(function(){
+  const _s=showSec;
+  showSec=function(id,el){ _s(id,el); if(id==='beranda') pasienHomeRender(); };
+})();
+function pasienDeepLink(){
+  const h=(location.hash||'').toLowerCase(), s=location.search||'';
+  if(h==='#pasien'||/[?&]go=pasien(&|$)/.test(s)) openPasien();
+}
+window.addEventListener('hashchange',pasienDeepLink);
+pasienHomeRender();
+pasienDeepLink();
+
+
+/* ====== Setting ventilator per pasien (mengikuti rumus Setting Awal di Bab 2) ====== */
+var BCD_VMODES=[['','Mode (opsional)'],['PC-AC','PC-AC'],['VC-AC','VC-AC'],['PRVC','PRVC'],['SIMV','SIMV'],['PSV','PSV'],['CPAP','CPAP']];
+function bcdRrRange(ageY){            /* tabel RR PALS 2015 (Bab 2) */
+  if(isNaN(ageY)) return null;
+  if(ageY<1) return [30,53];
+  if(ageY<3) return [22,37];
+  if(ageY<6) return [20,28];
+  if(ageY<12) return [18,25];
+  return [12,20];
+}
+function bcdTinsRange(ageY){          /* inspiratory time menurut usia (Bab 2) */
+  if(isNaN(ageY)) return null;
+  if(ageY<1) return [0.4,0.6];
+  if(ageY<=12) return [0.7,0.9];
+  return [0.9,1.2];
+}
+function bcdVentInitial(ageY){
+  var rr=bcdRrRange(ageY), t=bcdTinsRange(ageY);
+  return {mode:'',rr:rr?Math.round((rr[0]+rr[1])/2):null,dp:8,peep:5,fio2:50,
+          tins:t?(ageY<1?0.5:(ageY<=12?0.8:1.0)):null,ie:'1:2',ps:null,ftrig:null};
+}
+function bcdVentAlarm(bb,rr){         /* VTe min = 4xBBx80%, maks = 8xBBx120%; MVe = VTe x RR / 1000 */
+  if(!(bb>0)) return null;
+  var o={vteMin:4*bb*0.8,vteMax:8*bb*1.2};
+  if(rr>0){ o.mveMin=o.vteMin*rr/1000; o.mveMax=o.vteMax*rr/1000; }
+  return o;
+}
+function bcdVentSummary(vs){
+  if(!vs) return '';
+  var p=[];
+  if(vs.mode) p.push(vs.mode);
+  if(vs.rr!=null) p.push('RR '+bcdFmt(vs.rr));
+  if(vs.dp!=null) p.push('ΔP '+bcdFmt(vs.dp));
+  if(vs.peep!=null) p.push('PEEP '+bcdFmt(vs.peep));
+  if(vs.fio2!=null) p.push('FiO₂ '+bcdFmt(vs.fio2)+'%');
+  if(vs.tins!=null) p.push('T ins '+bcdFmt(vs.tins));
+  if(vs.ie) p.push('I:E '+vs.ie);
+  if(vs.ps!=null) p.push('PS '+bcdFmt(vs.ps));
+  if(vs.ftrig!=null) p.push('Ftrig '+bcdFmt(vs.ftrig));
+  return p.join(' · ');
+}
+/* Setting awal otomatis: semua 10 butir tabel "Setting Awal Ventilator" (Bab 2), dihitung dari usia dan BB pasien */
+function bcdVentAwal(p){
+  var age=bcdParseUsia(p.usia), ini=bcdVentInitial(age);
+  return {age:age, rr:bcdRrRange(age), rrStart:ini.rr, tins:bcdTinsRange(age), tinsStart:ini.tins,
+          al:bcdVentAlarm(p.bb,ini.rr), noCuff:bcdEttSuggest(age,false), cuff:bcdEttSuggest(age,true)};
+}
+function bcdVentAwalRender(p){
+  var box=document.getElementById('bcd-vent-awal'); if(!box) return;
+  var a=bcdVentAwal(p), B=function(x){return '<strong>'+x+'</strong>';}, noAge='Sesuai usia (isi usia pasien, mis. 3 tahun)';
+  var infant='Rumus untuk usia 1 tahun ke atas. Bayi: isi manual atau tanya senior.';
+  var rows=[];
+  rows.push(['1','RR',a.rr?'Sesuai usia: '+B(a.rr[0]+'–'+a.rr[1])+' x/menit (mulai '+B(bcdFmt(a.rrStart))+')':noAge]);
+  rows.push(['2','ΔP',B('8')+' cmH₂O']);
+  rows.push(['3','FiO₂',B('50%')+', naikkan bertahap sesuai kebutuhan']);
+  rows.push(['4','PEEP',B('5')+' cmH₂O']);
+  rows.push(['5','T insp',a.tins?'Sesuai usia: '+B(bcdFmt(a.tins[0])+'–'+bcdFmt(a.tins[1]))+' detik (mulai '+B(bcdFmt(a.tinsStart))+')':noAge]);
+  var al=a.al;
+  rows.push(['6','VTe',al?'Maks = 8 × '+kf(p.bb)+' × 120% = '+B(kf(al.vteMax,1))+' mL<br>Min = 4 × '+kf(p.bb)+' × 80% = '+B(kf(al.vteMin,1))+' mL':'Isi berat badan']);
+  rows.push(['7','MVe',(al&&al.mveMax!=null)
+    ?'Maks = '+kf(al.vteMax,1)+' × '+bcdFmt(a.rrStart)+' / 1000 = '+B(kf(al.mveMax,2))+' L/menit<br>Min = '+kf(al.vteMin,1)+' × '+bcdFmt(a.rrStart)+' / 1000 = '+B(kf(al.mveMin,2))+' L/menit<br><small>Memakai RR mulai '+bcdFmt(a.rrStart)+'. Dengan RR yang Anda set, lihat "Setting saat ini".</small>'
+    :'Perlu RR (isi usia agar RR awal terhitung)']);
+  var dp=a.noCuff, inst=function(n,u){ return n!=null?'<br><small>Terpasang: '+bcdFmt(n)+u+'</small>':''; };
+  rows.push(['8','Kedalaman ETT',dp?'Usia / 2 + 12 = '+B(bcdFmt(dp.depth))+' cm'+inst(p.ettDepth,' cm'):(isNaN(a.age)?noAge:infant)+inst(p.ettDepth,' cm')]);
+  rows.push(['9','Ukuran ETT',dp?'Usia / 4 + 4 = '+B(bcdFmt(a.noCuff.size))+' (tanpa cuff)<br>Usia / 4 + 3,5 = '+B(bcdFmt(a.cuff.size))+' (dengan cuff)'+inst(p.ettNo,(p.ettCuff===false?' tanpa cuff':' cuff')):(isNaN(a.age)?noAge:infant)+inst(p.ettNo,(p.ettCuff===false?' tanpa cuff':' cuff'))]);
+  rows.push(['10','I : E',B('1 : 2')]);
+  box.innerHTML='<table class="t"><tr><th>No</th><th>Parameter</th><th>Setting</th></tr>'
+    +rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td></tr>';}).join('')+'</table>'
+    +'<p class="src">Dihitung otomatis dari usia dan BB pasien (tabel Setting Awal Ventilator, Bab 2). Sesuaikan dengan kondisi pasien.</p>';
+}
+function bcdVentText(p){
+  if(!p.vent) return 'Tanpa ventilator';
+  var s='🫁 Ventilator · ETT '+(p.ettNo!=null?bcdFmt(p.ettNo)+(p.ettCuff===false?' tanpa cuff':' cuff'):'?')+' · kedalaman '+(p.ettDepth!=null?bcdFmt(p.ettDepth)+' cm':'?');
+  var a=bcdVentAwal(p), q=[], rr;
+  if(p.vset){
+    rr=p.vset.rr;
+    if(p.vset.rr!=null) q.push('RR '+bcdFmt(p.vset.rr));
+    if(p.vset.peep!=null) q.push('PEEP '+bcdFmt(p.vset.peep));
+    if(p.vset.fio2!=null) q.push('FiO₂ '+bcdFmt(p.vset.fio2)+'%');
+    if(p.vset.dp!=null) q.push('ΔP '+bcdFmt(p.vset.dp));
+    if(q.length) s+='<br>'+q.join(' · ');
+  } else {
+    rr=a.rrStart;
+    if(a.rrStart!=null) q.push('RR '+bcdFmt(a.rrStart));
+    q.push('ΔP 8','PEEP 5','FiO₂ 50%');
+    if(a.tinsStart!=null) q.push('T ins '+bcdFmt(a.tinsStart));
+    q.push('I:E 1:2');
+    s+='<br>Setting awal: '+q.join(' · ');
+  }
+  var al=bcdVentAlarm(p.bb,rr);
+  if(al) s+='<br>VTe '+kr(al.vteMin,al.vteMax,0)+' mL'+(al.mveMin!=null?' · MVe '+kr(al.mveMin,al.mveMax,2)+' L/menit':'');
+  return s;
+}
+function bcdVentRender(p){
+  var card=document.getElementById('bcd-vent-card');
+  if(!p.vent){ card.style.display='none'; document.getElementById('bcd-vent-form').style.display='none'; return; }
+  card.style.display='block';
+  bcdVentAwalRender(p);
+  var vs=p.vset, h='';
+  if(!vs){
+    h='<div class="bcd-empty">Belum ada setting ventilator yang dicatat.<br>Tekan "🧮 Pakai setting awal" atau "✏️ Ubah setting".</div>';
+  } else {
+    var row=function(k,v){ return v==null||v===''?'':'<tr><td>'+k+'</td><td><strong>'+v+'</strong></td></tr>'; };
+    var al=bcdVentAlarm(p.bb,vs.rr);
+    h='<table class="t"><tr><th>Parameter</th><th>Nilai</th></tr>'
+      +row('Mode',vs.mode)
+      +row('RR',vs.rr!=null?bcdFmt(vs.rr)+' x/menit':null)
+      +row('ΔP',vs.dp!=null?bcdFmt(vs.dp)+' cmH₂O':null)
+      +row('PEEP',vs.peep!=null?bcdFmt(vs.peep)+' cmH₂O':null)
+      +row('FiO₂',vs.fio2!=null?bcdFmt(vs.fio2)+'%':null)
+      +row('T inspirasi',vs.tins!=null?bcdFmt(vs.tins)+' detik':null)
+      +row('I : E',vs.ie)
+      +row('AP / PS',vs.ps!=null?bcdFmt(vs.ps)+' cmH₂O':null)
+      +row('Flow trigger',vs.ftrig!=null?bcdFmt(vs.ftrig)+' L/menit':null)
+      +(al?row('Rentang VTe (alarm)',kr(al.vteMin,al.vteMax,0)+' mL'):'')
+      +(al&&al.mveMin!=null?row('Rentang MVe (alarm)',kr(al.mveMin,al.mveMax,2)+' L/menit'):'')
+      +row('ETT',p.ettNo!=null?bcdFmt(p.ettNo)+(p.ettCuff===false?' tanpa cuff':' cuff')+(p.ettDepth!=null?' · '+bcdFmt(p.ettDepth)+' cm':''):null)
+      +'</table><p class="src">Diperbarui '+(vs.date?vs.date.slice(8)+'/'+vs.date.slice(5,7)+' ':'')+(vs.time||'')+'. Rentang VTe dan MVe dihitung dari BB '+p.bb+' kg dengan rumus Setting Awal (Bab 2).</p>';
+    var log=(p.vlog||[]);
+    if(log.length>1){
+      h+='<details class="dd"><summary>Riwayat setting ('+log.length+')</summary><div style="font-size:.74rem;line-height:1.7;margin-top:6px">'
+        +log.map(function(e){ return '<div><strong>'+(e.date?e.date.slice(8)+'/'+e.date.slice(5,7)+' ':'')+bcdEsc(e.time||'')+'</strong> · '+bcdEsc(bcdVentSummary(e)); }).join('</div>')+'</div></div></details>';
+    }
+  }
+  document.getElementById('bcd-vent-view').innerHTML=h;
+}
+function bcdVsFill(vs){
+  var set=function(k,v){ document.getElementById('bcd-vs-'+k).value=(v==null||v==='')?'':(typeof v==='number'?bcdFmt(v):v); };
+  ['mode','rr','dp','peep','fio2','tins','ie','ps','ftrig'].forEach(function(k){ set(k,vs?vs[k]:''); });
+}
+function bcdVsHint(p){
+  var age=bcdParseUsia(p.usia), rr=bcdRrRange(age), t=bcdTinsRange(age), s=[];
+  if(rr) s.push('RR sesuai usia '+rr[0]+'–'+rr[1]);
+  if(t) s.push('T ins '+bcdFmt(t[0])+'–'+bcdFmt(t[1])+' detik');
+  if(p.ettNo!=null){ var ps=p.ettNo<4?10:(p.ettNo<5?8:6); s.push('PS menurut ETT '+bcdFmt(p.ettNo)+': '+ps+' cmH₂O (buku)'); }
+  document.getElementById('bcd-vs-hint').textContent=s.length?('Acuan: '+s.join(' · ')+'.'):'Isi usia pasien (mis. 3 tahun) agar acuan rentang muncul.';
+}
+function bcdVsPreview(){
+  var p=bcdGetCurrentPatient(); if(!p) return;
+  var rr=kn(bcdVal('bcd-vs-rr')), al=bcdVentAlarm(p.bb,isFinite(rr)?rr:0), el=document.getElementById('bcd-vs-alarm');
+  if(!al){ el.textContent=''; return; }
+  el.textContent='Rentang VTe '+kr(al.vteMin,al.vteMax,0)+' mL'+(al.mveMin!=null?' · MVe '+kr(al.mveMin,al.mveMax,2)+' L/menit':'')+' (rumus Bab 2, BB '+p.bb+' kg)';
+}
+function bcdVentEditOpen(useInit){
+  var p=bcdGetCurrentPatient(); if(!p) return;
+  var f=document.getElementById('bcd-vent-form');
+  if(!useInit&&f.style.display==='block'){ f.style.display='none'; return; }
+  bcdVsFill(useInit?bcdVentInitial(bcdParseUsia(p.usia)):(p.vset||{}));
+  bcdVsHint(p); bcdVsPreview();
+  f.style.display='block';
+}
+function bcdVentSave(){
+  var list=bcdGetPatients(), idx=list.findIndex(function(x){return x.id===bcdCurrentPatientId;});
+  if(idx===-1) return;
+  var p=list[idx], g=function(k){ var x=kn(bcdVal('bcd-vs-'+k)); return isFinite(x)?x:null; };
+  var vs={mode:bcdVal('bcd-vs-mode'),rr:g('rr'),dp:g('dp'),peep:g('peep'),fio2:g('fio2'),tins:g('tins'),
+          ie:bcdVal('bcd-vs-ie').trim(),ps:g('ps'),ftrig:g('ftrig')};
+  if(!vs.mode&&vs.rr===null&&vs.dp===null&&vs.peep===null&&vs.fio2===null&&vs.tins===null&&!vs.ie&&vs.ps===null&&vs.ftrig===null){ alert('Isi minimal satu setting.'); return; }
+  var lim={rr:[5,120,'RR'],dp:[1,40,'ΔP'],peep:[0,25,'PEEP'],fio2:[21,100,'FiO₂'],tins:[0.1,3,'T ins'],ps:[0,40,'PS'],ftrig:[0.1,10,'Ftrig']}, odd=[];
+  Object.keys(lim).forEach(function(k){ if(vs[k]!==null&&(vs[k]<lim[k][0]||vs[k]>lim[k][1])) odd.push(lim[k][2]+' '+bcdFmt(vs[k])); });
+  if(odd.length&&!confirm('Nilai tidak lazim: '+odd.join(', ')+'. Tetap simpan?')) return;
+  vs.date=bcdLocalDate(); vs.time=bcdNowHM();
+  p.vset=vs;
+  if(!p.vlog) p.vlog=[];
+  p.vlog.unshift(JSON.parse(JSON.stringify(vs)));
+  if(p.vlog.length>30) p.vlog.length=30;
+  if(!bcdSavePatients(list)) return;
+  document.getElementById('bcd-vent-form').style.display='none';
+  bcdVentRender(p);
+}
+
 document.getElementById('tocFc').textContent=FLASHCARDS.length+' kartu';
 document.getElementById('tocQ').textContent=QUESTIONS.length+' soal';
 initFC();initQuizSetup();
@@ -1898,5 +2984,6 @@ initFC();initQuizSetup();
   setInterval(function(){ if(document.visibilityState==='visible') check(false); },600000);
 })();
 </script>
+
 </body>
 </html>
